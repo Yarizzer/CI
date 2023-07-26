@@ -17,6 +17,7 @@
 		71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F572A70E08400C378F4 /* AppUILayerContract.swift */; };
 		71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */; };
 		71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */; };
+		71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		71C91F572A70E08400C378F4 /* AppUILayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerContract.swift; sourceTree = "<group>"; };
 		71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorker.swift; sourceTree = "<group>"; };
 		71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorkerType.swift; sourceTree = "<group>"; };
+		71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		71C91F5B2A70E1DC00C378F4 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
+				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
