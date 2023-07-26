@@ -6,8 +6,37 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainSceneViewModelType { }
+protocol MainSceneViewModelType {
+    func getCellViewModel(with index: Int) -> MainSceneCellViewModelType
+}
 
-class MainSceneViewModel { }
+class MainSceneViewModel {
+    init() {
+        var data = [MainSceneCellViewModelType]()
+        data.append(MainSceneFiltersCellViewModel())
+        
+        self.cellItemsData = data
+    }
+    
+    private var cellItemsData: [MainSceneCellViewModelType]
+}
 
-extension MainSceneViewModel: MainSceneViewModelType { }
+extension MainSceneViewModel: MainSceneViewModelType {
+    func getCellViewModel(with index: Int) -> MainSceneCellViewModelType {
+        cellItemsData[index]
+    }
+}
+
+extension MainSceneViewModel: TableViewProviderViewModel {
+    var numberOfTableSections: Int { Constants.numberOfSections }
+    
+    func numberOfTableRowsInSection(_ section: Int) -> Int { cellItemsData.count }
+    func heightForRow(atIndex index: Int) -> Float { Constants.rowHeightValue }
+}
+
+extension MainSceneViewModel {
+    private struct Constants {
+        static let numberOfSections: Int = 0
+        static let rowHeightValue: Float = 80.0
+    }
+}
