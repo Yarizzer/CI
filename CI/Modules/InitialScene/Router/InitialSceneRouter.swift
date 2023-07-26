@@ -16,10 +16,8 @@ protocol InitialSceneRoutable {
 class InitialSceneRouter {
 	private func prepareDestinationScene(with type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType) -> UIViewController {
 		switch type {
-		case .testScene: print("\(self) \(#function) msg: 'Test scene'")
+        case .mainScene: return MainSceneRouter.assembly()
 		}
-		
-		return UIViewController()
 	}
 	
 	private weak var view: InitialSceneViewController?

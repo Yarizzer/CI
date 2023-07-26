@@ -22,6 +22,8 @@ extension InitialSceneInteractor: InitialSceneInteractable {
 	func makeRequest(requestType: InitialSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
+        case .viewIsReady: presenter.response(responseType: .viewIsReady)
+        case .routeToMainScene: router.routeTo(scene: .mainScene)
 		}
 	}
 }

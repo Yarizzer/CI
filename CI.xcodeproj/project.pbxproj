@@ -36,6 +36,19 @@
 		71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7D2A70E87E00C378F4 /* InitialSceneViewControllerContract.swift */; };
 		71C91F8A2A70E87E00C378F4 /* InitialScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7E2A70E87E00C378F4 /* InitialScenePresenterContract.swift */; };
 		71C91F8B2A70E87E00C378F4 /* InitialScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7F2A70E87E00C378F4 /* InitialScenePresenterService.swift */; };
+		71D9D8D12A71477900BC9F65 /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D02A71477900BC9F65 /* NSObject + Extensions.swift */; };
+		71D9D8DF2A71486C00BC9F65 /* MainScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D32A71486C00BC9F65 /* MainScenePresenter.swift */; };
+		71D9D8E02A71486C00BC9F65 /* MainSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D42A71486C00BC9F65 /* MainSceneRouterContract.swift */; };
+		71D9D8E12A71486C00BC9F65 /* MainSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D52A71486C00BC9F65 /* MainSceneRouter.swift */; };
+		71D9D8E22A71486C00BC9F65 /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D62A71486C00BC9F65 /* MainSceneViewController.swift */; };
+		71D9D8E32A71486C00BC9F65 /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D72A71486C00BC9F65 /* MainSceneInteractor.swift */; };
+		71D9D8E42A71486C00BC9F65 /* MainSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D82A71486C00BC9F65 /* MainSceneInteractorService.swift */; };
+		71D9D8E52A71486C00BC9F65 /* MainSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8D92A71486C00BC9F65 /* MainSceneInteractorContract.swift */; };
+		71D9D8E62A71486C00BC9F65 /* MainSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8DA2A71486C00BC9F65 /* MainSceneViewModel.swift */; };
+		71D9D8E72A71486C00BC9F65 /* MainSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D9D8DB2A71486C00BC9F65 /* MainSceneViewController.xib */; };
+		71D9D8E82A71486C00BC9F65 /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8DC2A71486C00BC9F65 /* MainSceneViewControllerContract.swift */; };
+		71D9D8E92A71486C00BC9F65 /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8DD2A71486C00BC9F65 /* MainScenePresenterContract.swift */; };
+		71D9D8EA2A71486C00BC9F65 /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8DE2A71486C00BC9F65 /* MainScenePresenterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +83,19 @@
 		71C91F7D2A70E87E00C378F4 /* InitialSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		71C91F7E2A70E87E00C378F4 /* InitialScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterContract.swift; sourceTree = "<group>"; };
 		71C91F7F2A70E87E00C378F4 /* InitialScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterService.swift; sourceTree = "<group>"; };
+		71D9D8D02A71477900BC9F65 /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
+		71D9D8D32A71486C00BC9F65 /* MainScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenter.swift; sourceTree = "<group>"; };
+		71D9D8D42A71486C00BC9F65 /* MainSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRouterContract.swift; sourceTree = "<group>"; };
+		71D9D8D52A71486C00BC9F65 /* MainSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRouter.swift; sourceTree = "<group>"; };
+		71D9D8D62A71486C00BC9F65 /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
+		71D9D8D72A71486C00BC9F65 /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
+		71D9D8D82A71486C00BC9F65 /* MainSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractorService.swift; sourceTree = "<group>"; };
+		71D9D8D92A71486C00BC9F65 /* MainSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractorContract.swift; sourceTree = "<group>"; };
+		71D9D8DA2A71486C00BC9F65 /* MainSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModel.swift; sourceTree = "<group>"; };
+		71D9D8DB2A71486C00BC9F65 /* MainSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSceneViewController.xib; sourceTree = "<group>"; };
+		71D9D8DC2A71486C00BC9F65 /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		71D9D8DD2A71486C00BC9F65 /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
+		71D9D8DE2A71486C00BC9F65 /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +247,7 @@
 		71C91F672A70E6C300C378F4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71D9D8CF2A71476200BC9F65 /* Extensions */,
 				71C91F6E2A70E75D00C378F4 /* SelfExtractor */,
 				71C91F712A70E78100C378F4 /* Publisher + Subscriber */,
 				71C91F6A2A70E70F00C378F4 /* BaseViewController.swift */,
@@ -233,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				71C91F692A70E6F400C378F4 /* InitialScene */,
+				71D9D8D22A71485B00BC9F65 /* MainScene */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -328,6 +356,89 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		71D9D8CF2A71476200BC9F65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8D02A71477900BC9F65 /* NSObject + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71D9D8D22A71485B00BC9F65 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8EF2A71489D00BC9F65 /* Router */,
+				71D9D8EE2A71489400BC9F65 /* ViewModel */,
+				71D9D8ED2A71488900BC9F65 /* Interactor */,
+				71D9D8EC2A71488000BC9F65 /* Presenter */,
+				71D9D8EB2A71487600BC9F65 /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		71D9D8EB2A71487600BC9F65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8D62A71486C00BC9F65 /* MainSceneViewController.swift */,
+				71D9D8DB2A71486C00BC9F65 /* MainSceneViewController.xib */,
+				71D9D8DC2A71486C00BC9F65 /* MainSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71D9D8EC2A71488000BC9F65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8F12A7149B100BC9F65 /* Service */,
+				71D9D8D32A71486C00BC9F65 /* MainScenePresenter.swift */,
+				71D9D8DD2A71486C00BC9F65 /* MainScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		71D9D8ED2A71488900BC9F65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8F02A7149A100BC9F65 /* Service */,
+				71D9D8D72A71486C00BC9F65 /* MainSceneInteractor.swift */,
+				71D9D8D92A71486C00BC9F65 /* MainSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		71D9D8EE2A71489400BC9F65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8DA2A71486C00BC9F65 /* MainSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71D9D8EF2A71489D00BC9F65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8D42A71486C00BC9F65 /* MainSceneRouterContract.swift */,
+				71D9D8D52A71486C00BC9F65 /* MainSceneRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		71D9D8F02A7149A100BC9F65 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8D82A71486C00BC9F65 /* MainSceneInteractorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		71D9D8F12A7149B100BC9F65 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71D9D8DE2A71486C00BC9F65 /* MainScenePresenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,6 +499,7 @@
 			files = (
 				71C91F882A70E87E00C378F4 /* InitialSceneViewController.xib in Resources */,
 				718D163E2A6FB65D00E59160 /* LaunchScreen.storyboard in Resources */,
+				71D9D8E72A71486C00BC9F65 /* MainSceneViewController.xib in Resources */,
 				718D163B2A6FB65D00E59160 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,29 +513,41 @@
 			files = (
 				71C91F8B2A70E87E00C378F4 /* InitialScenePresenterService.swift in Sources */,
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
+				71D9D8E32A71486C00BC9F65 /* MainSceneInteractor.swift in Sources */,
+				71D9D8E02A71486C00BC9F65 /* MainSceneRouterContract.swift in Sources */,
 				71C91F662A70E4A200C378F4 /* Logger.swift in Sources */,
 				71C91F732A70E79D00C378F4 /* Publisher + Subscriber.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
+				71D9D8E22A71486C00BC9F65 /* MainSceneViewController.swift in Sources */,
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
 				71C91F802A70E87E00C378F4 /* InitialScenePresenter.swift in Sources */,
 				71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */,
+				71D9D8EA2A71486C00BC9F65 /* MainScenePresenterService.swift in Sources */,
 				71C91F812A70E87E00C378F4 /* InitialSceneRouterContract.swift in Sources */,
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
+				71D9D8E62A71486C00BC9F65 /* MainSceneViewModel.swift in Sources */,
 				71C91F872A70E87E00C378F4 /* InitialSceneViewModel.swift in Sources */,
+				71D9D8E42A71486C00BC9F65 /* MainSceneInteractorService.swift in Sources */,
 				71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				71C91F832A70E87E00C378F4 /* InitialSceneViewController.swift in Sources */,
 				71C91F852A70E87E00C378F4 /* InitialSceneInteractorService.swift in Sources */,
+				71D9D8E52A71486C00BC9F65 /* MainSceneInteractorContract.swift in Sources */,
 				71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */,
 				71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */,
 				71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */,
+				71D9D8E12A71486C00BC9F65 /* MainSceneRouter.swift in Sources */,
 				71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
+				71D9D8E82A71486C00BC9F65 /* MainSceneViewControllerContract.swift in Sources */,
+				71D9D8D12A71477900BC9F65 /* NSObject + Extensions.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
 				71C91F842A70E87E00C378F4 /* InitialSceneInteractor.swift in Sources */,
+				71D9D8E92A71486C00BC9F65 /* MainScenePresenterContract.swift in Sources */,
 				71C91F862A70E87E00C378F4 /* InitialSceneInteractorContract.swift in Sources */,
 				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,
+				71D9D8DF2A71486C00BC9F65 /* MainScenePresenter.swift in Sources */,
 				71C91F8A2A70E87E00C378F4 /* InitialScenePresenterContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

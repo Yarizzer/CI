@@ -15,23 +15,44 @@ class InitialSceneViewController: BaseViewController<InitialSceneInteractable> {
 		
 		setup()
 	}
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        interactor?.makeRequest(requestType: .viewIsReady)
+    }
 	
 	private func setup() {
 		interactor?.makeRequest(requestType: .initialSetup)
+        
+        mainImage.alpha = Constants.alphaValues.min
 	}
+    
+    @IBOutlet private weak var mainImage: UIImageView!
 }
 
 extension InitialSceneViewController: InitialSceneViewControllerType {
 	func update(viewModelDataType: InitialSceneViewControllerViewModel.ViewModelDataType) {
 		switch viewModelDataType {
 		case .initialSetup(let model):
-            writeLog(type: .info, message: "Invoked with model instance \(model)")
+            guard let image = UIImage(named: model.imageName) else { return }
+            
+            mainImage.image = image
+            
+        case .appearElements:
+            UIView.animate(withDuration: Constants.initialAD, delay: 0, options: [.curveEaseInOut, .allowUserInteraction], animations: extractSelf { sSelf in
+                sSelf.mainImage.alpha = Constants.alphaValues.max
+            }, completion: extractSelf { sSelf, finished in
+                sSelf.interactor?.makeRequest(requestType: .routeToMainScene)
+            })
 		}
 	}
 }
 
 extension InitialSceneViewController {
 	private struct Constants {
-		
+        static let alphaValues: (min: CGFloat, max: CGFloat) = (min: 0.0, max: 1.0)
+        //AnimationDuration
+        static let initialAD: Double = 3.0
 	}
 }

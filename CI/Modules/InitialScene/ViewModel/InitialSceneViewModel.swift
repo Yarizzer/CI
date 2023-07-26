@@ -6,8 +6,18 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneViewModelType { }
+protocol InitialSceneViewModelType {
+    var imageName: String { get }
+}
 
 class InitialSceneViewModel { }
 
-extension InitialSceneViewModel: InitialSceneViewModelType { }
+extension InitialSceneViewModel: InitialSceneViewModelType {
+    var imageName: String { Constants.mainImageValue }
+}
+
+extension InitialSceneViewModel {
+    private struct Constants {
+        static let mainImageValue = "Flower"
+    }
+}

@@ -13,6 +13,7 @@ protocol InitialScenePresentable {
 struct InitialScenePresenterResponse {
 	enum InitialSceneResponseType {
 		case initialSetup
+        case viewIsReady
 		case drainView
 	}
 }

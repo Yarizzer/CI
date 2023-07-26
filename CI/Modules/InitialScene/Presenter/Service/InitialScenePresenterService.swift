@@ -11,6 +11,7 @@ protocol InitialScenePresenterServiceType{
 }
 
 class InitialScenePresenterService {
+    #warning("Fill the service, elsewise it's useless")
 	init(withModel model: InitialSceneViewModelType) {
 		self.viewModel = model
 	}
