@@ -19,6 +19,7 @@
 		71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */; };
 		71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */; };
 		71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F622A70E30600C378F4 /* AppUILayerDeviceWorker.swift */; };
+		71C91F662A70E4A200C378F4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F652A70E4A200C378F4 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorkerType.swift; sourceTree = "<group>"; };
 		71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
 		71C91F622A70E30600C378F4 /* AppUILayerDeviceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorker.swift; sourceTree = "<group>"; };
+		71C91F652A70E4A200C378F4 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				718D16492A6FB7B900E59160 /* AppRouter */,
 				718D16482A6FB7B200E59160 /* AppDelegate */,
 				71C91F4D2A70DEB300C378F4 /* AppCore */,
+				71C91F642A70E41B00C378F4 /* Utilities */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -173,6 +176,14 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		71C91F642A70E41B00C378F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F652A70E4A200C378F4 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
+				71C91F662A70E4A200C378F4 /* Logger.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
