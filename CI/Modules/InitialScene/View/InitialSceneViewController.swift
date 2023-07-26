@@ -25,7 +25,7 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
 	func update(viewModelDataType: InitialSceneViewControllerViewModel.ViewModelDataType) {
 		switch viewModelDataType {
 		case .initialSetup(let model):
-            writeLog(type: .info, message: "\(self) \(#function) with model instance \(model)")
+            writeLog(type: .info, message: "Invoked with model instance \(model)")
 		}
 	}
 }
