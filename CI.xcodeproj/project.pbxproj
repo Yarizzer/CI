@@ -24,6 +24,18 @@
 		71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F6C2A70E74000C378F4 /* NibLoadableView.swift */; };
 		71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F6F2A70E76B00C378F4 /* SelfExtractable.swift */; };
 		71C91F732A70E79D00C378F4 /* Publisher + Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */; };
+		71C91F802A70E87E00C378F4 /* InitialScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F742A70E87E00C378F4 /* InitialScenePresenter.swift */; };
+		71C91F812A70E87E00C378F4 /* InitialSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F752A70E87E00C378F4 /* InitialSceneRouterContract.swift */; };
+		71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F762A70E87E00C378F4 /* InitialSceneRouter.swift */; };
+		71C91F832A70E87E00C378F4 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F772A70E87E00C378F4 /* InitialSceneViewController.swift */; };
+		71C91F842A70E87E00C378F4 /* InitialSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F782A70E87E00C378F4 /* InitialSceneInteractor.swift */; };
+		71C91F852A70E87E00C378F4 /* InitialSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F792A70E87E00C378F4 /* InitialSceneInteractorService.swift */; };
+		71C91F862A70E87E00C378F4 /* InitialSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7A2A70E87E00C378F4 /* InitialSceneInteractorContract.swift */; };
+		71C91F872A70E87E00C378F4 /* InitialSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7B2A70E87E00C378F4 /* InitialSceneViewModel.swift */; };
+		71C91F882A70E87E00C378F4 /* InitialSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71C91F7C2A70E87E00C378F4 /* InitialSceneViewController.xib */; };
+		71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7D2A70E87E00C378F4 /* InitialSceneViewControllerContract.swift */; };
+		71C91F8A2A70E87E00C378F4 /* InitialScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7E2A70E87E00C378F4 /* InitialScenePresenterContract.swift */; };
+		71C91F8B2A70E87E00C378F4 /* InitialScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F7F2A70E87E00C378F4 /* InitialScenePresenterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +58,18 @@
 		71C91F6C2A70E74000C378F4 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		71C91F6F2A70E76B00C378F4 /* SelfExtractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfExtractable.swift; sourceTree = "<group>"; };
 		71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Subscriber.swift"; sourceTree = "<group>"; };
+		71C91F742A70E87E00C378F4 /* InitialScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenter.swift; sourceTree = "<group>"; };
+		71C91F752A70E87E00C378F4 /* InitialSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneRouterContract.swift; sourceTree = "<group>"; };
+		71C91F762A70E87E00C378F4 /* InitialSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneRouter.swift; sourceTree = "<group>"; };
+		71C91F772A70E87E00C378F4 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
+		71C91F782A70E87E00C378F4 /* InitialSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneInteractor.swift; sourceTree = "<group>"; };
+		71C91F792A70E87E00C378F4 /* InitialSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneInteractorService.swift; sourceTree = "<group>"; };
+		71C91F7A2A70E87E00C378F4 /* InitialSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneInteractorContract.swift; sourceTree = "<group>"; };
+		71C91F7B2A70E87E00C378F4 /* InitialSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewModel.swift; sourceTree = "<group>"; };
+		71C91F7C2A70E87E00C378F4 /* InitialSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialSceneViewController.xib; sourceTree = "<group>"; };
+		71C91F7D2A70E87E00C378F4 /* InitialSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		71C91F7E2A70E87E00C378F4 /* InitialScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterContract.swift; sourceTree = "<group>"; };
+		71C91F7F2A70E87E00C378F4 /* InitialScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +240,11 @@
 		71C91F692A70E6F400C378F4 /* InitialScene */ = {
 			isa = PBXGroup;
 			children = (
+				71C91F902A70E8C300C378F4 /* Router */,
+				71C91F8F2A70E8B700C378F4 /* ViewModel */,
+				71C91F8E2A70E8A600C378F4 /* Interactor */,
+				71C91F8D2A70E89B00C378F4 /* Presenter */,
+				71C91F8C2A70E88F00C378F4 /* View */,
 			);
 			path = InitialScene;
 			sourceTree = "<group>";
@@ -234,6 +263,69 @@
 				71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */,
 			);
 			path = "Publisher + Subscriber";
+			sourceTree = "<group>";
+		};
+		71C91F8C2A70E88F00C378F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F772A70E87E00C378F4 /* InitialSceneViewController.swift */,
+				71C91F7C2A70E87E00C378F4 /* InitialSceneViewController.xib */,
+				71C91F7D2A70E87E00C378F4 /* InitialSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71C91F8D2A70E89B00C378F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F922A70E8DE00C378F4 /* Service */,
+				71C91F742A70E87E00C378F4 /* InitialScenePresenter.swift */,
+				71C91F7E2A70E87E00C378F4 /* InitialScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		71C91F8E2A70E8A600C378F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F912A70E8D200C378F4 /* Service */,
+				71C91F782A70E87E00C378F4 /* InitialSceneInteractor.swift */,
+				71C91F7A2A70E87E00C378F4 /* InitialSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		71C91F8F2A70E8B700C378F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F7B2A70E87E00C378F4 /* InitialSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71C91F902A70E8C300C378F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F762A70E87E00C378F4 /* InitialSceneRouter.swift */,
+				71C91F752A70E87E00C378F4 /* InitialSceneRouterContract.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		71C91F912A70E8D200C378F4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F792A70E87E00C378F4 /* InitialSceneInteractorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		71C91F922A70E8DE00C378F4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F7F2A70E87E00C378F4 /* InitialScenePresenterService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C91F882A70E87E00C378F4 /* InitialSceneViewController.xib in Resources */,
 				718D163E2A6FB65D00E59160 /* LaunchScreen.storyboard in Resources */,
 				718D163B2A6FB65D00E59160 /* Assets.xcassets in Resources */,
 			);
@@ -306,21 +399,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C91F8B2A70E87E00C378F4 /* InitialScenePresenterService.swift in Sources */,
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
 				71C91F662A70E4A200C378F4 /* Logger.swift in Sources */,
 				71C91F732A70E79D00C378F4 /* Publisher + Subscriber.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
+				71C91F802A70E87E00C378F4 /* InitialScenePresenter.swift in Sources */,
 				71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */,
+				71C91F812A70E87E00C378F4 /* InitialSceneRouterContract.swift in Sources */,
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
+				71C91F872A70E87E00C378F4 /* InitialSceneViewModel.swift in Sources */,
 				71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
+				71C91F832A70E87E00C378F4 /* InitialSceneViewController.swift in Sources */,
+				71C91F852A70E87E00C378F4 /* InitialSceneInteractorService.swift in Sources */,
 				71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */,
+				71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */,
 				71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */,
+				71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
+				71C91F842A70E87E00C378F4 /* InitialSceneInteractor.swift in Sources */,
+				71C91F862A70E87E00C378F4 /* InitialSceneInteractorContract.swift in Sources */,
 				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,
+				71C91F8A2A70E87E00C378F4 /* InitialScenePresenterContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
