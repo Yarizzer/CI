@@ -16,6 +16,7 @@
 		71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F542A70DFCC00C378F4 /* AppUILayer.swift */; };
 		71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F572A70E08400C378F4 /* AppUILayerContract.swift */; };
 		71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */; };
+		71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		71C91F542A70DFCC00C378F4 /* AppUILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayer.swift; sourceTree = "<group>"; };
 		71C91F572A70E08400C378F4 /* AppUILayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerContract.swift; sourceTree = "<group>"; };
 		71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorker.swift; sourceTree = "<group>"; };
+		71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorkerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */,
+				71C91F5E2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
+				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,

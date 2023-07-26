@@ -36,28 +36,28 @@ class AppUILayerStyleWorker {
     }
 }
 
-//extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
-//    //Colors
-//    var colorClear: UIColor { StyleColors.clear.color }
-//    var colorWhite: UIColor { StyleColors.white.color }
-//    var colorBlack: UIColor { StyleColors.black.color }
-//    var colorLightGray: UIColor { StyleColors.lightGray.color }
-//    var colorGray: UIColor { StyleColors.gray.color }
-//    var colorDarkGray: UIColor { StyleColors.darkGray.color }
-//    var colorRed: UIColor { StyleColors.red.color }
-//    var colorGreen: UIColor { StyleColors.green.color }
-//    var colorOrange: UIColor { StyleColors.orange.color }
-//    //Fonts
-//    var labelTitleFontExtraLarge: UIFont {  Constants.extraLargeFont }
-//    var labelTitleFontLarge: UIFont { Constants.largeFont }
-//    var labelTitleFontMedium: UIFont {  Constants.mediumFont }
-//    var labelTitleFontSmall: UIFont {  Constants.smallFont }
-//    //Layers
-//    var layerBorderWidth: CGFloat { Constants.layerData.borderWidth }
-//    var layerLineWidth: CGFloat { Constants.layerData.lineWidth }
-//    //ImageNames
-//    var logoImageName: String { Constants.logoImageName }
-//}
+extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
+    //Colors
+    var colorClear: UIColor { StyleColors.clear.color }
+    var colorWhite: UIColor { StyleColors.white.color }
+    var colorBlack: UIColor { StyleColors.black.color }
+    var colorLightGray: UIColor { StyleColors.lightGray.color }
+    var colorGray: UIColor { StyleColors.gray.color }
+    var colorDarkGray: UIColor { StyleColors.darkGray.color }
+    var colorRed: UIColor { StyleColors.red.color }
+    var colorGreen: UIColor { StyleColors.green.color }
+    var colorOrange: UIColor { StyleColors.orange.color }
+    //Fonts
+    var labelTitleFontExtraLarge: UIFont {  Constants.extraLargeFont }
+    var labelTitleFontLarge: UIFont { Constants.largeFont }
+    var labelTitleFontMedium: UIFont {  Constants.mediumFont }
+    var labelTitleFontSmall: UIFont {  Constants.smallFont }
+    //Layers
+    var layerBorderWidth: CGFloat { Constants.layerData.borderWidth }
+    var layerLineWidth: CGFloat { Constants.layerData.lineWidth }
+    //ImageNames
+    var logoImageName: String { Constants.logoImageName }
+}
 
 extension AppUILayerStyleWorker {
     private struct Constants {
