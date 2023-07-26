@@ -1,5 +1,5 @@
 //
-//  MainMenu.swift
+//  FiltersScenePopUpMenu.swift
 //  CI
 //
 //  Created by Yaroslav Abaturov on 26.07.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainMenu: UIView {
+class FiltersScenePopUpMenu: UIView {
     //MARK: - initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -122,7 +122,7 @@ class MainMenu: UIView {
 //        logoView.bottomAnchor.constraint(equalTo: textInputView.topAnchor, constant: -Constants.elementsPaddingValue).isActive = true
     }
     //MARK: - SetupViewModel
-    func setup(with model: MainMenuViewModelType) {
+    func setup(with model: FiltersScenePopUpMenuViewModelType) {
         self.model = model
         
 //        guard let logoView, let textInputView else { return }
@@ -159,7 +159,7 @@ class MainMenu: UIView {
 //        }
     }
     
-    private var model: MainMenuViewModelType?
+    private var model: FiltersScenePopUpMenuViewModelType?
     
     private var provider: PickerViewProviderType?
     
@@ -170,7 +170,7 @@ class MainMenu: UIView {
     private var applyButton: ApplyFilterButton?
 }
 
-extension MainMenu {
+extension FiltersScenePopUpMenu {
     private struct Constants {
         static let canvasWidthValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.width / 1.1
         static let canvasHeightValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.height / 3.5

@@ -1,11 +1,11 @@
 //
-//  MainMenuViewModel.swift
+//  FiltersScenePopUpMenuViewModel.swift
 //  CI
 //
 //  Created by Yaroslav Abaturov on 26.07.2023.
 //
 
-class MainMenuViewModel {
+class FiltersScenePopUpMenuViewModel {
     init() {
         var data = [PickerViewItemViewModelType]()
         data.append(PickerViewItemRegularViewModel(with: "First"))
@@ -18,12 +18,12 @@ class MainMenuViewModel {
     private var items: [PickerViewItemViewModelType]
 }
 
-extension MainMenuViewModel: MainMenuViewModelType {
+extension FiltersScenePopUpMenuViewModel: FiltersScenePopUpMenuViewModelType {
     func getItemModel(for row: Int, component: Int) -> PickerViewItemViewModelType {
         items[row]
     }
 }
 
-extension MainMenuViewModel {
+extension FiltersScenePopUpMenuViewModel {
     private struct Constants { }
 }
