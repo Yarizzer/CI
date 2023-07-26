@@ -11,6 +11,7 @@ import AVFoundation
 class AppUILayerDeviceWorker: AppUILayerDeviceWorkerType {
     var screenSize: CGRect { UIScreen.main.bounds }
     var topPaddingValue: CGFloat {
+        #warning("remove warning below, about 'windows' was deprecated")
         guard (UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.safeAreaInsets.top ?? 0) > 24 else { return Constants.paddingValues.top.withoutNotch }
             
         return Constants.paddingValues.top.withNotch

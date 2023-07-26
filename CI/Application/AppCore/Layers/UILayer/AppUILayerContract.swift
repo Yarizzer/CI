@@ -6,6 +6,6 @@
 //
 
 protocol AppUILayerType {
-//    var style: AppUILayerStyleWorkerType { get }
-//    var device: AppUILayerDeviceWorkerType { get }
+    var style: AppUILayerStyleWorkerType { get }
+    var device: AppUILayerDeviceWorkerType { get }
 }
