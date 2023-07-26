@@ -20,6 +20,10 @@
 		71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */; };
 		71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F622A70E30600C378F4 /* AppUILayerDeviceWorker.swift */; };
 		71C91F662A70E4A200C378F4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F652A70E4A200C378F4 /* Logger.swift */; };
+		71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F6A2A70E70F00C378F4 /* BaseViewController.swift */; };
+		71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F6C2A70E74000C378F4 /* NibLoadableView.swift */; };
+		71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F6F2A70E76B00C378F4 /* SelfExtractable.swift */; };
+		71C91F732A70E79D00C378F4 /* Publisher + Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		71C91F602A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
 		71C91F622A70E30600C378F4 /* AppUILayerDeviceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorker.swift; sourceTree = "<group>"; };
 		71C91F652A70E4A200C378F4 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		71C91F6A2A70E70F00C378F4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71C91F6C2A70E74000C378F4 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		71C91F6F2A70E76B00C378F4 /* SelfExtractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfExtractable.swift; sourceTree = "<group>"; };
+		71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Subscriber.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				718D16472A6FB7A700E59160 /* Application */,
+				71C91F672A70E6C300C378F4 /* Common */,
+				71C91F682A70E6CB00C378F4 /* Modules */,
 				718D16452A6FB6A000E59160 /* LaunchScreen */,
 				718D16462A6FB6AC00E59160 /* SupportingFiles */,
 			);
@@ -184,6 +194,48 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		71C91F672A70E6C300C378F4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F6E2A70E75D00C378F4 /* SelfExtractor */,
+				71C91F712A70E78100C378F4 /* Publisher + Subscriber */,
+				71C91F6A2A70E70F00C378F4 /* BaseViewController.swift */,
+				71C91F6C2A70E74000C378F4 /* NibLoadableView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71C91F682A70E6CB00C378F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F692A70E6F400C378F4 /* InitialScene */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		71C91F692A70E6F400C378F4 /* InitialScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InitialScene;
+			sourceTree = "<group>";
+		};
+		71C91F6E2A70E75D00C378F4 /* SelfExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F6F2A70E76B00C378F4 /* SelfExtractable.swift */,
+			);
+			path = SelfExtractor;
+			sourceTree = "<group>";
+		};
+		71C91F712A70E78100C378F4 /* Publisher + Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F722A70E79D00C378F4 /* Publisher + Subscriber.swift */,
+			);
+			path = "Publisher + Subscriber";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,12 +308,16 @@
 			files = (
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
 				71C91F662A70E4A200C378F4 /* Logger.swift in Sources */,
+				71C91F732A70E79D00C378F4 /* Publisher + Subscriber.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
+				71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */,
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
 				71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
+				71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */,
+				71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
 				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,

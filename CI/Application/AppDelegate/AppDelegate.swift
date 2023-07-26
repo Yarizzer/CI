@@ -28,5 +28,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func routeToInitialScene() {
         self.router?.routeToInitialScene()
     }
-
 }
