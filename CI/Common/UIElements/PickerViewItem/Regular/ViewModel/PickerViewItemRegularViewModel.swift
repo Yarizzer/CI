@@ -20,3 +20,7 @@ class PickerViewItemRegularViewModel {
 extension PickerViewItemRegularViewModel: PickerViewItemRegularViewModelType {
     var contentData: String { content }
 }
+
+extension PickerViewItemRegularViewModel: PickerViewItemViewModelType {
+    var type: PickerViewItemType { .regular }
+}

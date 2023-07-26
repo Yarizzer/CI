@@ -8,3 +8,7 @@
 enum PickerViewItemType {
     case regular
 }
+
+protocol PickerViewItemViewModelType {
+    var type: PickerViewItemType { get }
+}

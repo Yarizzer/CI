@@ -6,5 +6,5 @@
 //
 
 protocol MainMenuViewModelType {
-    
+    func getItemModel(for row: Int, component: Int) -> PickerViewItemViewModelType
 }

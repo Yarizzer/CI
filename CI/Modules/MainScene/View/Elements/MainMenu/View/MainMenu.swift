@@ -36,16 +36,18 @@ class MainMenu: UIView {
     }
     //MARK: - SetupView
     private func setupView() {
-//        self.alpha = Constants.alpha.min
-//
-//        blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
-//        canvas = UIView()
-//        logoView = UIImageView()
-//        textInputView = UITextField()
-//        confirmButton = ConfirmButton()
-//        closeButton = CloseButton()
-//
-//        guard let canvas, let blurEffectView, let logoView, let textInputView, let confirmButton, let closeButton else { return }
+        canvas = UIView()
+        pickerView = UIPickerView()
+        applyButton = ApplyFilterButton()
+        
+        guard let canvas else { return }
+        
+        #warning("test section")
+        canvas.backgroundColor = .red
+
+        #warning("test section")
+        
+
 //
 //        canvas.backgroundColor = AppCore.shared.uiLayer.style.colorOrange
 //
@@ -66,11 +68,19 @@ class MainMenu: UIView {
 //        canvas.addSubview(confirmButton)
 //        canvas.addSubview(closeButton)
 //
-//        addSubview(blurEffectView)
-//        addSubview(canvas)
+        addSubview(canvas)
     }
     //MARK: - SetupConstraints
     private func setupConstraints() {
+        guard let canvas else { return }
+        
+        canvas.translatesAutoresizingMaskIntoConstraints = false
+        
+        canvas.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        canvas.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        canvas.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        canvas.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        
 //        guard let canvas, let blurEffectView, let logoView, let textInputView, let confirmButton, let closeButton else { return }
 //
 //        canvas.translatesAutoresizingMaskIntoConstraints = false
@@ -121,6 +131,8 @@ class MainMenu: UIView {
 //        logoView.image = image
 //
 //        textInputView.placeholder = model.textInputViewPlaceholder
+        
+//        self.setupProvider()
     }
     
     private func setupProvider() {
@@ -128,21 +140,23 @@ class MainMenu: UIView {
         
         provider = PickerViewProvider(for: pickerView, with: providerModel)
         
-        provider?.onConfigureView = { row, component in
-            switch model.getPickerType(for: row, for: component) {
+        provider?.onConfigureView = { [weak self] row, component in
+            guard let item = self?.model?.getItemModel(for: row, component: component) else { return PickerViewItemRegular() }
+            
+            switch item.type {
             case .regular:
-                guard let viewModel = model.getPickerViewModel(for: row, component: component) else { return PickerViewReusableViewRegular() }
+                guard let item = (item as? PickerViewItemRegularViewModelType) else { return PickerViewItemRegular() }
                 
-                let view = PickerViewReusableViewRegular()
-                view.setup(with: viewModel)
+                let view = PickerViewItemRegular()
+                view.setup(with: item)
                 
                 return view
             }
         }
         
-        provider?.didSelectRow = { [weak self] row in
-            self?.interactor?.makeRequest(requestType: .routeToScene(forRow: row))
-        }
+//        provider?.didSelectRow = { [weak self] row in
+//            self?.interactor?.makeRequest(requestType: .routeToScene(forRow: row))
+//        }
     }
     
     private var model: MainMenuViewModelType?
@@ -151,4 +165,14 @@ class MainMenu: UIView {
     
     private var canvas: UIView?
     private var pickerView: UIPickerView?
+    
+    
+    private var applyButton: ApplyFilterButton?
+}
+
+extension MainMenu {
+    private struct Constants {
+        static let canvasWidthValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.width / 1.1
+        static let canvasHeightValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.height / 3.5
+    }
 }
