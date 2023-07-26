@@ -15,6 +15,7 @@
 		71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F502A70DF0900C378F4 /* AppCoreContract.swift */; };
 		71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F542A70DFCC00C378F4 /* AppUILayer.swift */; };
 		71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F572A70E08400C378F4 /* AppUILayerContract.swift */; };
+		71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		71C91F502A70DF0900C378F4 /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
 		71C91F542A70DFCC00C378F4 /* AppUILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayer.swift; sourceTree = "<group>"; };
 		71C91F572A70E08400C378F4 /* AppUILayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerContract.swift; sourceTree = "<group>"; };
+		71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +133,35 @@
 		71C91F532A70DFAE00C378F4 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				71C91F592A70E1B900C378F4 /* Workers */,
 				71C91F542A70DFCC00C378F4 /* AppUILayer.swift */,
 				71C91F572A70E08400C378F4 /* AppUILayerContract.swift */,
 			);
 			path = UILayer;
+			sourceTree = "<group>";
+		};
+		71C91F592A70E1B900C378F4 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F5B2A70E1DC00C378F4 /* Device */,
+				71C91F5A2A70E1D500C378F4 /* Style */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		71C91F5A2A70E1D500C378F4 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				71C91F5C2A70E1F800C378F4 /* AppUILayerStyleWorker.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		71C91F5B2A70E1DC00C378F4 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +237,7 @@
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
 				71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */,
 				71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */,
+				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
