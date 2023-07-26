@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7168F0F52A71899600BB3AA0 /* FiltersScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */; };
+		7168F0F62A71899600BB3AA0 /* FiltersSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */; };
+		7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */; };
+		7168F0F82A71899600BB3AA0 /* FiltersSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EC2A71899600BB3AA0 /* FiltersSceneViewController.swift */; };
+		7168F0F92A71899600BB3AA0 /* FiltersSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0ED2A71899600BB3AA0 /* FiltersSceneInteractor.swift */; };
+		7168F0FA2A71899600BB3AA0 /* FiltersSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EE2A71899600BB3AA0 /* FiltersSceneInteractorService.swift */; };
+		7168F0FB2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EF2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift */; };
+		7168F0FC2A71899600BB3AA0 /* FiltersSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0F02A71899600BB3AA0 /* FiltersSceneViewModel.swift */; };
+		7168F0FD2A71899600BB3AA0 /* FiltersSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7168F0F12A71899600BB3AA0 /* FiltersSceneViewController.xib */; };
+		7168F0FE2A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0F22A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift */; };
+		7168F0FF2A71899600BB3AA0 /* FiltersScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0F32A71899600BB3AA0 /* FiltersScenePresenterContract.swift */; };
+		7168F1002A71899600BB3AA0 /* FiltersScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0F42A71899600BB3AA0 /* FiltersScenePresenterService.swift */; };
 		718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D16312A6FB65C00E59160 /* AppDelegate.swift */; };
 		718D163B2A6FB65D00E59160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718D163A2A6FB65D00E59160 /* Assets.xcassets */; };
 		718D163E2A6FB65D00E59160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718D163C2A6FB65D00E59160 /* LaunchScreen.storyboard */; };
@@ -63,6 +75,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenter.swift; sourceTree = "<group>"; };
+		7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouterContract.swift; sourceTree = "<group>"; };
+		7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouter.swift; sourceTree = "<group>"; };
+		7168F0EC2A71899600BB3AA0 /* FiltersSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneViewController.swift; sourceTree = "<group>"; };
+		7168F0ED2A71899600BB3AA0 /* FiltersSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneInteractor.swift; sourceTree = "<group>"; };
+		7168F0EE2A71899600BB3AA0 /* FiltersSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneInteractorService.swift; sourceTree = "<group>"; };
+		7168F0EF2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneInteractorContract.swift; sourceTree = "<group>"; };
+		7168F0F02A71899600BB3AA0 /* FiltersSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneViewModel.swift; sourceTree = "<group>"; };
+		7168F0F12A71899600BB3AA0 /* FiltersSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiltersSceneViewController.xib; sourceTree = "<group>"; };
+		7168F0F22A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		7168F0F32A71899600BB3AA0 /* FiltersScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenterContract.swift; sourceTree = "<group>"; };
+		7168F0F42A71899600BB3AA0 /* FiltersScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenterService.swift; sourceTree = "<group>"; };
 		718D162E2A6FB65C00E59160 /* CI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718D16312A6FB65C00E59160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718D163A2A6FB65D00E59160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +155,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7168F0E82A71896A00BB3AA0 /* FiltersScene */ = {
+			isa = PBXGroup;
+			children = (
+				7168F1052A7189D000BB3AA0 /* Router */,
+				7168F1042A7189C400BB3AA0 /* ViewModel */,
+				7168F1032A7189B900BB3AA0 /* Interactor */,
+				7168F1022A7189AE00BB3AA0 /* Presenter */,
+				7168F1012A7189A400BB3AA0 /* View */,
+			);
+			path = FiltersScene;
+			sourceTree = "<group>";
+		};
+		7168F1012A7189A400BB3AA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7168F0EC2A71899600BB3AA0 /* FiltersSceneViewController.swift */,
+				7168F0F12A71899600BB3AA0 /* FiltersSceneViewController.xib */,
+				7168F0F22A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7168F1022A7189AE00BB3AA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7168F1072A7189EA00BB3AA0 /* Service */,
+				7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */,
+				7168F0F32A71899600BB3AA0 /* FiltersScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7168F1032A7189B900BB3AA0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7168F1062A7189E100BB3AA0 /* Service */,
+				7168F0ED2A71899600BB3AA0 /* FiltersSceneInteractor.swift */,
+				7168F0EF2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7168F1042A7189C400BB3AA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7168F0F02A71899600BB3AA0 /* FiltersSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7168F1052A7189D000BB3AA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */,
+				7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7168F1062A7189E100BB3AA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7168F0EE2A71899600BB3AA0 /* FiltersSceneInteractorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7168F1072A7189EA00BB3AA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7168F0F42A71899600BB3AA0 /* FiltersScenePresenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		718D16252A6FB65C00E59160 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +383,7 @@
 		71C91F682A70E6CB00C378F4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7168F0E82A71896A00BB3AA0 /* FiltersScene */,
 				71C91F692A70E6F400C378F4 /* InitialScene */,
 				71D9D8D22A71485B00BC9F65 /* MainScene */,
 			);
@@ -654,6 +754,7 @@
 				718D163E2A6FB65D00E59160 /* LaunchScreen.storyboard in Resources */,
 				71D9D8E72A71486C00BC9F65 /* MainSceneViewController.xib in Resources */,
 				718D163B2A6FB65D00E59160 /* Assets.xcassets in Resources */,
+				7168F0FD2A71899600BB3AA0 /* FiltersSceneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +770,7 @@
 				71D9D8FD2A714C3600BC9F65 /* PickerViewProviderViewModel.swift in Sources */,
 				71D9D90F2A7153BB00BC9F65 /* PickerViewItemContract.swift in Sources */,
 				71D9D9032A714E6D00BC9F65 /* MainMenu.swift in Sources */,
+				7168F1002A71899600BB3AA0 /* FiltersScenePresenterService.swift in Sources */,
 				71D9D8E32A71486C00BC9F65 /* MainSceneInteractor.swift in Sources */,
 				71D9D8E02A71486C00BC9F65 /* MainSceneRouterContract.swift in Sources */,
 				71C91F662A70E4A200C378F4 /* Logger.swift in Sources */,
@@ -679,6 +781,7 @@
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
 				71C91F802A70E87E00C378F4 /* InitialScenePresenter.swift in Sources */,
 				71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */,
+				7168F0F62A71899600BB3AA0 /* FiltersSceneRouterContract.swift in Sources */,
 				71D9D8EA2A71486C00BC9F65 /* MainScenePresenterService.swift in Sources */,
 				71C91F812A70E87E00C378F4 /* InitialSceneRouterContract.swift in Sources */,
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
@@ -691,24 +794,33 @@
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				71C91F832A70E87E00C378F4 /* InitialSceneViewController.swift in Sources */,
 				71C91F852A70E87E00C378F4 /* InitialSceneInteractorService.swift in Sources */,
+				7168F0F52A71899600BB3AA0 /* FiltersScenePresenter.swift in Sources */,
 				71D9D8E52A71486C00BC9F65 /* MainSceneInteractorContract.swift in Sources */,
 				71C91F702A70E76B00C378F4 /* SelfExtractable.swift in Sources */,
 				71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */,
 				71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */,
 				71D9D8E12A71486C00BC9F65 /* MainSceneRouter.swift in Sources */,
+				7168F0F82A71899600BB3AA0 /* FiltersSceneViewController.swift in Sources */,
 				71D9D9142A71540400BC9F65 /* PickerViewItemRegular.swift in Sources */,
 				71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */,
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71D9D8E82A71486C00BC9F65 /* MainSceneViewControllerContract.swift in Sources */,
+				7168F0F92A71899600BB3AA0 /* FiltersSceneInteractor.swift in Sources */,
 				71D9D8F82A714BFA00BC9F65 /* PickerViewProvider.swift in Sources */,
+				7168F0FE2A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift in Sources */,
+				7168F0FF2A71899600BB3AA0 /* FiltersScenePresenterContract.swift in Sources */,
 				71D9D8D12A71477900BC9F65 /* NSObject + Extensions.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
+				7168F0FC2A71899600BB3AA0 /* FiltersSceneViewModel.swift in Sources */,
 				71C91F842A70E87E00C378F4 /* InitialSceneInteractor.swift in Sources */,
 				71D9D90C2A7152E800BC9F65 /* ApplyFilterButton.swift in Sources */,
 				71D9D8FB2A714C2100BC9F65 /* PickerViewProviderType.swift in Sources */,
 				71D9D9052A714F5E00BC9F65 /* MainMenuViewModelType.swift in Sources */,
+				7168F0FB2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift in Sources */,
 				71D9D8E92A71486C00BC9F65 /* MainScenePresenterContract.swift in Sources */,
+				7168F0FA2A71899600BB3AA0 /* FiltersSceneInteractorService.swift in Sources */,
 				71D9D9162A71543700BC9F65 /* PickerViewItemRegularViewModel.swift in Sources */,
+				7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */,
 				71C91F862A70E87E00C378F4 /* InitialSceneInteractorContract.swift in Sources */,
 				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,
 				71D9D8DF2A71486C00BC9F65 /* MainScenePresenter.swift in Sources */,
