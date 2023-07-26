@@ -14,15 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         router = AppRouter()
         
-//        AppCore.shared.prepareSession { [weak self] success in
-//            self?.routeToInitialScene()
-//        }
+        AppCore.shared.prepareSession { [weak self] success in
+            self?.routeToInitialScene()
+        }
         
         return true
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
-//        AppCore.shared.closeSession()
+        AppCore.shared.closeSession()
     }
     
     private func routeToInitialScene() {

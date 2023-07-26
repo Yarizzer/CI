@@ -15,7 +15,14 @@ class AppCore {
     private let appUIL: AppUILayerType
 }
 
-extension AppCore: AppCoreSessionType {}
+extension AppCore: AppCoreSessionType {
+    func prepareSession(completion: @escaping (Bool) -> ()) {
+        writeLog(type: .info, message: "Session prepared")
+        completion(true)
+    }
+    func openSession() { writeLog(type: .info, message: "Session opened") }
+    func closeSession() { writeLog(type: .info, message: "Session closed") }
+}
 
 extension AppCore: AppCoreUILayerType {
     var uiLayer: AppUILayerType { appUIL }
