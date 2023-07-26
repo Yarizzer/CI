@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainSceneViewController">
             <connections>
+                <outlet property="tableView" destination="6xn-JG-vTn" id="2w5-iT-tg1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
             </connections>
         </placeholder>
@@ -20,17 +21,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-4Z-6La" userLabel="Back View">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsH-Gp-PwM" customClass="MainMenu" customModule="CI" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="568" width="320" height="142"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6xn-JG-vTn">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="KsH-Gp-PwM" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="B0k-h2-Z0f"/>
-                        <constraint firstAttribute="trailing" secondItem="KsH-Gp-PwM" secondAttribute="trailing" id="Kj1-he-fk5"/>
-                        <constraint firstItem="KsH-Gp-PwM" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="bottom" id="jq0-Dx-zhP"/>
-                        <constraint firstItem="KsH-Gp-PwM" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="1:4" id="paw-HA-i4g"/>
+                        <constraint firstAttribute="trailing" secondItem="6xn-JG-vTn" secondAttribute="trailing" id="TPd-bN-7NI"/>
+                        <constraint firstItem="6xn-JG-vTn" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="WkN-2X-UMO"/>
+                        <constraint firstAttribute="bottom" secondItem="6xn-JG-vTn" secondAttribute="bottom" id="slT-8U-ipa"/>
+                        <constraint firstItem="6xn-JG-vTn" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="us1-GX-kfZ"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>

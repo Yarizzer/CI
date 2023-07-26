@@ -19,6 +19,10 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
 	private func setup() {
 		interactor?.makeRequest(requestType: .initialSetup)
 	}
+    
+//    private var provider: TableViewProvider?
+    
+    @IBOutlet private weak var tableView: UITableView!
 }
 
 extension MainSceneViewController: MainSceneViewControllerType {
