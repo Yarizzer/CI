@@ -6,5 +6,9 @@
 //
 
 protocol FiltersScenePopUpMenuViewModelType {
+    //Publisher
+    var needToHide: Publisher<Bool?> { get }
+    
+    func updateNeedToShowValue(with data: Bool)
     func getItemModel(for row: Int, component: Int) -> PickerViewItemViewModelType
 }

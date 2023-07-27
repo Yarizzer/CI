@@ -13,5 +13,6 @@ protocol FiltersSceneViewControllerType {
 struct FiltersSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: FiltersSceneViewModelType)
+        case needToHidePopUpMenu(withValue: Bool?)
 	}
 }

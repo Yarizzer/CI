@@ -10,6 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersSceneViewController">
             <connections>
                 <outlet property="backButton" destination="CeH-ud-OMG" id="FYJ-1L-0r0"/>
+                <outlet property="imageView" destination="sKH-W9-s26" id="wrm-ic-9Wh"/>
+                <outlet property="popUpMenu" destination="Rzt-CD-FOU" id="w3S-nL-hxZ"/>
                 <outlet property="popUpMenuTopPaddingConstraint" destination="9Pz-qU-25r" id="vTG-jg-hXb"/>
                 <outlet property="sceneTitle" destination="bxU-2E-fKU" id="CL8-NL-j0k"/>
                 <outlet property="topPaddingConstraint" destination="VHM-NN-eqW" id="ash-sE-X9o"/>
@@ -55,8 +57,11 @@
                                 <constraint firstItem="bxU-2E-fKU" firstAttribute="width" secondItem="F0S-sf-IKf" secondAttribute="width" multiplier="2:3" id="dBO-sb-HH8"/>
                             </constraints>
                         </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKH-W9-s26">
+                            <rect key="frame" x="0.0" y="50" width="320" height="558"/>
+                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzt-CD-FOU" customClass="FiltersScenePopUpMenu" customModule="CI" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="568" width="320" height="142"/>
+                            <rect key="frame" x="0.0" y="568" width="320" height="227"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
@@ -64,11 +69,15 @@
                     <constraints>
                         <constraint firstItem="Rzt-CD-FOU" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="9AL-2X-nes"/>
                         <constraint firstItem="Rzt-CD-FOU" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="bottom" id="9Pz-qU-25r"/>
-                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="1:4" id="Ak5-Dc-POn"/>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="2:5" id="Ak5-Dc-POn"/>
+                        <constraint firstItem="sKH-W9-s26" firstAttribute="top" secondItem="F0S-sf-IKf" secondAttribute="bottom" id="DLQ-zu-YUo"/>
+                        <constraint firstItem="sKH-W9-s26" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="KJr-nk-WUS"/>
                         <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="VHM-NN-eqW"/>
                         <constraint firstAttribute="trailing" secondItem="Rzt-CD-FOU" secondAttribute="trailing" id="dxF-jn-gqz"/>
+                        <constraint firstAttribute="trailing" secondItem="sKH-W9-s26" secondAttribute="trailing" id="fx6-cV-cNf"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="jAA-Jb-VfW"/>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="top" secondItem="sKH-W9-s26" secondAttribute="bottom" constant="-40" id="ocg-o0-dUE"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>

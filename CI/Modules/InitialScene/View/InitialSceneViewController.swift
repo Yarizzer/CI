@@ -63,6 +63,6 @@ extension InitialSceneViewController {
 	private struct Constants {
         static let alphaValues: (min: CGFloat, max: CGFloat) = (min: 0.0, max: 1.0)
         //AnimationDuration
-        static let initialAD: Double = 3.0
+        static let initialAD: Double = 1.0
 	}
 }

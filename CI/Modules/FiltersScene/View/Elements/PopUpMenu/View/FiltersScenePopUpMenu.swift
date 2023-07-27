@@ -38,21 +38,25 @@ class FiltersScenePopUpMenu: UIView {
     }
     //MARK: - SetupView
     private func setupView() {
+        backgroundColor = AppCore.shared.uiLayer.style.colorClear
+        
         showHideButton = ShowHideButton()
         canvas = UIView()
         pickerView = UIPickerView()
         applyButton = ApplyFilterButton()
         
-        guard let showHideButton, let canvas else { return }
+        guard let showHideButton, let canvas, let pickerView else { return }
         
         #warning("test section")
         
-        backgroundColor = .red
+        //backgroundColor = .red
 
         #warning("test section")
         
         showHideButton.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
         showHideButton.addTarget(self, action: #selector(showHideButtonAction), for: .touchUpInside)
+        
+        canvas.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
 
 //
 //        canvas.backgroundColor = AppCore.shared.uiLayer.style.colorOrange
@@ -74,15 +78,18 @@ class FiltersScenePopUpMenu: UIView {
 //        canvas.addSubview(confirmButton)
 //        canvas.addSubview(closeButton)
 //
+        canvas.addSubview(pickerView)
+        
         addSubview(showHideButton)
         addSubview(canvas)
     }
     //MARK: - SetupConstraints
     private func setupConstraints() {
-        guard let showHideButton, let canvas else { return }
+        guard let showHideButton, let canvas, let pickerView else { return }
         
         showHideButton.translatesAutoresizingMaskIntoConstraints = false
         canvas.translatesAutoresizingMaskIntoConstraints = false
+        pickerView.translatesAutoresizingMaskIntoConstraints = false
         
         showHideButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
         showHideButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.showHideButtonTrailingOffset).isActive = true
@@ -93,6 +100,14 @@ class FiltersScenePopUpMenu: UIView {
         canvas.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         canvas.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         canvas.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        
+        pickerView.topAnchor.constraint(equalTo: canvas.topAnchor).isActive = true
+        pickerView.leadingAnchor.constraint(equalTo: canvas.leadingAnchor, constant: Constants.elementsPaddingValue).isActive = true
+        pickerView.trailingAnchor.constraint(equalTo: canvas.trailingAnchor, constant: -Constants.elementsPaddingValue).isActive = true
+        
+        #warning("test section")
+        pickerView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+        #warning("test section")
         
 //        guard let canvas, let blurEffectView, let logoView, let textInputView, let confirmButton, let closeButton else { return }
 //
@@ -146,6 +161,8 @@ class FiltersScenePopUpMenu: UIView {
 //        textInputView.placeholder = model.textInputViewPlaceholder
         
 //        self.setupProvider()
+        
+        setupProvider()
     }
     
     private func setupProvider() {
@@ -175,7 +192,9 @@ class FiltersScenePopUpMenu: UIView {
     @objc private func showHideButtonAction() {
         guard let showHideButton else { return }
         
-        showHideButton.toggle()
+        showHideButton.toggle() { [weak self] isHidden in
+            self?.model?.updateNeedToShowValue(with: isHidden)
+        }
     }
     
     private var model: FiltersScenePopUpMenuViewModelType?
@@ -192,9 +211,10 @@ class FiltersScenePopUpMenu: UIView {
 
 extension FiltersScenePopUpMenu {
     private struct Constants {
-        static let showHideButtonTrailingOffset: CGFloat = 30.0
-        static let showHideButtonWidthHeightValue: CGFloat = 30.0
+        static let showHideButtonTrailingOffset: CGFloat = 50.0
+        static let showHideButtonWidthHeightValue: CGFloat = 35.0
         static let canvasWidthValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.width / 1.1
         static let canvasHeightValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.height / 3.5
+        static let elementsPaddingValue: CGFloat = 10.0
     }
 }

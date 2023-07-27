@@ -40,8 +40,10 @@ class ShowHideButton: UIButton {
         }
     }
     
-    func toggle() {
+    func toggle(completion: (Bool) -> ()) {
         viewIsHidden?.toggle()
+        
+        completion(viewIsHidden ?? true)
     }
 }
 
