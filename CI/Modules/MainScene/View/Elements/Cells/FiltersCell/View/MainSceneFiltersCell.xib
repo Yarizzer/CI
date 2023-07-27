@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,24 +16,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hj-bn-SpN">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPo-L4-mz4">
                         <rect key="frame" x="10" y="5" width="300" height="34"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hj-bn-SpN">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Hj-bn-SpN" firstAttribute="leading" secondItem="uPo-L4-mz4" secondAttribute="leading" id="9EN-N9-jTQ"/>
+                            <constraint firstAttribute="trailing" secondItem="0Hj-bn-SpN" secondAttribute="trailing" id="ED8-eb-Yf3"/>
+                            <constraint firstAttribute="bottom" secondItem="0Hj-bn-SpN" secondAttribute="bottom" id="i8e-LA-wau"/>
+                            <constraint firstItem="0Hj-bn-SpN" firstAttribute="top" secondItem="uPo-L4-mz4" secondAttribute="top" id="uQz-x6-fqf"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0Hj-bn-SpN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DIp-IT-RCA"/>
-                    <constraint firstAttribute="bottom" secondItem="0Hj-bn-SpN" secondAttribute="bottom" constant="5" id="Jzd-YP-PNO"/>
-                    <constraint firstAttribute="trailing" secondItem="0Hj-bn-SpN" secondAttribute="trailing" constant="10" id="Q2D-qX-zMW"/>
-                    <constraint firstItem="0Hj-bn-SpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="klf-o8-vBK"/>
+                    <constraint firstAttribute="bottom" secondItem="uPo-L4-mz4" secondAttribute="bottom" constant="5" id="R6Z-1j-LIt"/>
+                    <constraint firstAttribute="trailing" secondItem="uPo-L4-mz4" secondAttribute="trailing" constant="10" id="Rvf-iL-dAl"/>
+                    <constraint firstItem="uPo-L4-mz4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gu1-Eu-0mc"/>
+                    <constraint firstItem="uPo-L4-mz4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iue-QL-aIS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="canvas" destination="uPo-L4-mz4" id="tbf-4j-zeU"/>
                 <outlet property="cellTitle" destination="0Hj-bn-SpN" id="y9G-VE-XV5"/>
             </connections>
             <point key="canvasLocation" x="75" y="21"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

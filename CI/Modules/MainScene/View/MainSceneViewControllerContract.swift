@@ -14,5 +14,6 @@ struct MainSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: MainSceneViewModelType)
         case setupProvider(with: MainSceneViewModelType)
+        case reloadProvider
 	}
 }

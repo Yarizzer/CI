@@ -11,8 +11,10 @@ class MainSceneFiltersCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        contentView.layer.cornerRadius = Constants.canvasCornerRadiusValue
-        contentView.layer.masksToBounds = true
+        guard let canvas else { return }
+        
+        canvas.layer.cornerRadius = Constants.canvasCornerRadiusValue
+        canvas.layer.masksToBounds = true
     }
     
     func setup(with model: MainSceneCellViewModelType) {
@@ -24,9 +26,12 @@ class MainSceneFiltersCell: UITableViewCell {
     private func setupView() {
         selectionStyle = .none
         
-        contentView.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
+        guard let canvas else { return }
+        
+        canvas.backgroundColor = AppCore.shared.uiLayer.style.colorDarkGray
     }
     
+    @IBOutlet private weak var canvas: UIView!
     @IBOutlet private weak var cellTitle: UILabel!
 }
 

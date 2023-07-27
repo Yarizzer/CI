@@ -21,12 +21,10 @@ extension MainScenePresenter: MainScenePresentable {
 		let model = service.model
 		
 		switch responseType {
-		case .initialSetup:
-            viewController?.update(viewModelDataType: .initialSetup(with: model))
+		case .initialSetup: viewController?.update(viewModelDataType: .initialSetup(with: model))
+        case .setupProvider:
             viewController?.update(viewModelDataType: .setupProvider(with: model))
-        case .viewIsReady:
-            writeLog(type: .info, message: "\(#function)")
-//            viewController?.update(viewModelDataType: .setupProvider(with: model))
+            viewController?.update(viewModelDataType: .reloadProvider)
 		case .drainView: viewController = nil
 		}
 	}

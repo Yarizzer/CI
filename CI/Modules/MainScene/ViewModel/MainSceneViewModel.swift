@@ -36,7 +36,7 @@ extension MainSceneViewModel: TableViewProviderViewModel {
 
 extension MainSceneViewModel {
     private struct Constants {
-        static let numberOfSections: Int = 0
+        static let numberOfSections: Int = 1
         static let rowHeightValue: Float = 80.0
     }
 }

@@ -14,5 +14,6 @@ struct MainSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
         case viewIsReady
+        case itemSelected(withIndex: Int)
 	}
 }

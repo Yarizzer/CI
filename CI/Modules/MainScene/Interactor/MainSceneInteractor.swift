@@ -22,7 +22,11 @@ extension MainSceneInteractor: MainSceneInteractable {
 	func makeRequest(requestType: MainSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
-        case .viewIsReady: presenter.response(responseType: .viewIsReady)
+        case .viewIsReady: presenter.response(responseType: .setupProvider)
+        case .itemSelected(let index):
+            switch service.getItem(with: index).type {
+            case .filters: router.routeTo(scene: .filtersScene)
+            }
 		}
 	}
 }
