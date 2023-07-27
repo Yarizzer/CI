@@ -3,11 +3,16 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersSceneViewController">
             <connections>
+                <outlet property="backButton" destination="CeH-ud-OMG" id="FYJ-1L-0r0"/>
+                <outlet property="popUpMenuTopPaddingConstraint" destination="9Pz-qU-25r" id="vTG-jg-hXb"/>
+                <outlet property="sceneTitle" destination="bxU-2E-fKU" id="CL8-NL-j0k"/>
+                <outlet property="topPaddingConstraint" destination="VHM-NN-eqW" id="ash-sE-X9o"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
             </connections>
         </placeholder>
@@ -22,26 +27,47 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0S-sf-IKf" userLabel="Header View">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                             <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeH-ud-OMG" customClass="BackButton" customModule="CI" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CeH-ud-OMG" secondAttribute="height" multiplier="1:1" id="YkL-Z7-Shq"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                    <connections>
+                                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="yYj-pZ-w72"/>
+                                    </connections>
+                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-2E-fKU">
-                                    <rect key="frame" x="40" y="15.5" width="240" height="19.5"/>
+                                    <rect key="frame" x="53.5" y="15.5" width="213" height="19.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="CeH-ud-OMG" secondAttribute="bottom" constant="5" id="7VG-uf-vLq"/>
                                 <constraint firstItem="bxU-2E-fKU" firstAttribute="centerX" secondItem="F0S-sf-IKf" secondAttribute="centerX" id="FeU-h8-Iuw"/>
+                                <constraint firstItem="CeH-ud-OMG" firstAttribute="leading" secondItem="F0S-sf-IKf" secondAttribute="leading" constant="10" id="IoN-ET-sjt"/>
                                 <constraint firstAttribute="height" constant="50" id="LeU-EW-ZYM"/>
                                 <constraint firstItem="bxU-2E-fKU" firstAttribute="centerY" secondItem="F0S-sf-IKf" secondAttribute="centerY" id="Wud-nf-FNa"/>
-                                <constraint firstItem="bxU-2E-fKU" firstAttribute="width" secondItem="F0S-sf-IKf" secondAttribute="width" multiplier="3:4" id="dBO-sb-HH8"/>
+                                <constraint firstItem="CeH-ud-OMG" firstAttribute="top" secondItem="F0S-sf-IKf" secondAttribute="top" constant="5" id="Zqm-EQ-A25"/>
+                                <constraint firstItem="bxU-2E-fKU" firstAttribute="width" secondItem="F0S-sf-IKf" secondAttribute="width" multiplier="2:3" id="dBO-sb-HH8"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzt-CD-FOU" customClass="FiltersScenePopUpMenu" customModule="CI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="568" width="320" height="142"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="9AL-2X-nes"/>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="bottom" id="9Pz-qU-25r"/>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="1:4" id="Ak5-Dc-POn"/>
                         <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="VHM-NN-eqW"/>
+                        <constraint firstAttribute="trailing" secondItem="Rzt-CD-FOU" secondAttribute="trailing" id="dxF-jn-gqz"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="jAA-Jb-VfW"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
@@ -61,8 +87,8 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

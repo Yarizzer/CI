@@ -11,6 +11,7 @@ import UIKit
 protocol FiltersSceneRoutable {
 	static func assembly() -> UIViewController
 	func routeTo(scene type: FiltersSceneRoutableContractData.FiltersSceneRoutableSceneType)
+    func dismiss()
 }
 
 class FiltersSceneRouter {
@@ -52,4 +53,8 @@ extension FiltersSceneRouter: FiltersSceneRoutable {
 //		vc.transitioningDelegate = view
 		self.view?.present(vc, animated: true)
 	}
+    
+    func dismiss() {
+        view?.dismiss(animated: true, completion: nil)
+    }
 }

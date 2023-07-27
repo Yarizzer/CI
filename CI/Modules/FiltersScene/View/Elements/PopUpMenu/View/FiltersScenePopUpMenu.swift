@@ -26,6 +26,8 @@ class FiltersScenePopUpMenu: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        
+        
 //        guard let canvas, let textInputView else { return }
 //
 //        canvas.layer.cornerRadius = Constants.canvasCornerRadiusValue
@@ -36,17 +38,21 @@ class FiltersScenePopUpMenu: UIView {
     }
     //MARK: - SetupView
     private func setupView() {
+        showHideButton = ShowHideButton()
         canvas = UIView()
         pickerView = UIPickerView()
         applyButton = ApplyFilterButton()
         
-        guard let canvas else { return }
+        guard let showHideButton, let canvas else { return }
         
         #warning("test section")
-        canvas.backgroundColor = .red
+        
+        backgroundColor = .red
 
         #warning("test section")
         
+        showHideButton.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
+        showHideButton.addTarget(self, action: #selector(showHideButtonAction), for: .touchUpInside)
 
 //
 //        canvas.backgroundColor = AppCore.shared.uiLayer.style.colorOrange
@@ -68,15 +74,22 @@ class FiltersScenePopUpMenu: UIView {
 //        canvas.addSubview(confirmButton)
 //        canvas.addSubview(closeButton)
 //
+        addSubview(showHideButton)
         addSubview(canvas)
     }
     //MARK: - SetupConstraints
     private func setupConstraints() {
-        guard let canvas else { return }
+        guard let showHideButton, let canvas else { return }
         
+        showHideButton.translatesAutoresizingMaskIntoConstraints = false
         canvas.translatesAutoresizingMaskIntoConstraints = false
         
-        canvas.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        showHideButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        showHideButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.showHideButtonTrailingOffset).isActive = true
+        showHideButton.widthAnchor.constraint(equalToConstant: Constants.showHideButtonWidthHeightValue).isActive = true
+        showHideButton.heightAnchor.constraint(equalToConstant: Constants.showHideButtonWidthHeightValue).isActive = true
+        
+        canvas.topAnchor.constraint(equalTo: showHideButton.bottomAnchor).isActive = true
         canvas.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         canvas.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         canvas.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
@@ -159,10 +172,17 @@ class FiltersScenePopUpMenu: UIView {
 //        }
     }
     
+    @objc private func showHideButtonAction() {
+        guard let showHideButton else { return }
+        
+        showHideButton.toggle()
+    }
+    
     private var model: FiltersScenePopUpMenuViewModelType?
     
     private var provider: PickerViewProviderType?
     
+    private var showHideButton: ShowHideButton?
     private var canvas: UIView?
     private var pickerView: UIPickerView?
     
@@ -172,6 +192,8 @@ class FiltersScenePopUpMenu: UIView {
 
 extension FiltersScenePopUpMenu {
     private struct Constants {
+        static let showHideButtonTrailingOffset: CGFloat = 30.0
+        static let showHideButtonWidthHeightValue: CGFloat = 30.0
         static let canvasWidthValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.width / 1.1
         static let canvasHeightValue: CGFloat = AppCore.shared.uiLayer.device.screenSize.height / 3.5
     }

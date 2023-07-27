@@ -13,5 +13,7 @@ protocol FiltersSceneInteractable {
 struct FiltersSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
+        case viewIsReady
+        case routeBack
 	}
 }

@@ -27,6 +27,14 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
             sSelf.interactor?.makeRequest(requestType: .viewIsReady)
         })
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        topPaddingConstraint.constant = AppCore.shared.uiLayer.device.topPaddingValue + Constants.topConstraintExtraValue
+        
+        tableView.alpha = Constants.alpha.min
+    }
 	
 	private func setup() {
         topPaddingConstraint.constant = AppCore.shared.uiLayer.device.topPaddingValue + Constants.topConstraintExtraValue
