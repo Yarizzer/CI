@@ -34,6 +34,7 @@
 		718D163B2A6FB65D00E59160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718D163A2A6FB65D00E59160 /* Assets.xcassets */; };
 		718D163E2A6FB65D00E59160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718D163C2A6FB65D00E59160 /* LaunchScreen.storyboard */; };
 		718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D164A2A6FB7C300E59160 /* AppRouter.swift */; };
+		71B102972A7248C800944FE6 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B102962A7248C800944FE6 /* BackButton.swift */; };
 		71C91F4F2A70DED000C378F4 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F4E2A70DED000C378F4 /* AppCore.swift */; };
 		71C91F512A70DF0900C378F4 /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F502A70DF0900C378F4 /* AppCoreContract.swift */; };
 		71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C91F542A70DFCC00C378F4 /* AppUILayer.swift */; };
@@ -112,6 +113,7 @@
 		718D163D2A6FB65D00E59160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		718D163F2A6FB65D00E59160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		718D164A2A6FB7C300E59160 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		71B102962A7248C800944FE6 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		71C91F4E2A70DED000C378F4 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		71C91F502A70DF0900C378F4 /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
 		71C91F542A70DFCC00C378F4 /* AppUILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayer.swift; sourceTree = "<group>"; };
@@ -404,6 +406,14 @@
 				718D164A2A6FB7C300E59160 /* AppRouter.swift */,
 			);
 			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		71B102952A7248BA00944FE6 /* BackButton */ = {
+			isa = PBXGroup;
+			children = (
+				71B102962A7248C800944FE6 /* BackButton.swift */,
+			);
+			path = BackButton;
 			sourceTree = "<group>";
 		};
 		71C91F4D2A70DEB300C378F4 /* AppCore */ = {
@@ -725,6 +735,7 @@
 		71D9D9092A7152C500BC9F65 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				71B102952A7248BA00944FE6 /* BackButton */,
 				71D9D90A2A7152D000BC9F65 /* ApplyFilterButton */,
 			);
 			path = Buttons;
@@ -886,6 +897,7 @@
 				71C91F892A70E87E00C378F4 /* InitialSceneViewControllerContract.swift in Sources */,
 				71C91F6D2A70E74000C378F4 /* NibLoadableView.swift in Sources */,
 				71D9D8E12A71486C00BC9F65 /* MainSceneRouter.swift in Sources */,
+				71B102972A7248C800944FE6 /* BackButton.swift in Sources */,
 				7168F0F82A71899600BB3AA0 /* FiltersSceneViewController.swift in Sources */,
 				71D9D9142A71540400BC9F65 /* PickerViewItemRegular.swift in Sources */,
 				71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */,

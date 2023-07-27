@@ -71,7 +71,7 @@ extension MainSceneViewController: MainSceneViewControllerType {
             provider?.onSelectCell = extractSelf { sSelf, indexPath in
                 writeLog(type: .info, message: "Cell with index \(indexPath.row) did tapped")
                 AppCore.shared.uiLayer.device.generateFeedback(with: .success)
-                self?.interactor?.makeRequest(requestType: .itemSelected(withIndex: indexPath.row))
+                sSelf.interactor?.makeRequest(requestType: .itemSelected(withIndex: indexPath.row))
             }
         case .reloadProvider:
             UIView.animate(withDuration: Constants.tableViewAD / 2, delay: 0, options: [.allowUserInteraction], animations: extractSelf { sSelf in
@@ -84,6 +84,16 @@ extension MainSceneViewController: MainSceneViewControllerType {
             })
 		}
 	}
+}
+
+extension MainSceneViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        BlurTransitionAnimator()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        BlurTransitionAnimator()
+    }
 }
 
 extension MainSceneViewController {
