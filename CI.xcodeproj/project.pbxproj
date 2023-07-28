@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712774362A73DED7003BE85B /* AppCIProcessorLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712774352A73DED7003BE85B /* AppCIProcessorLayerType.swift */; };
+		712774382A73DEE8003BE85B /* AppCIProcessorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712774372A73DEE8003BE85B /* AppCIProcessorLayer.swift */; };
+		7127743C2A73EC50003BE85B /* ProcessorFilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127743B2A73EC50003BE85B /* ProcessorFilterItem.swift */; };
+		7127743E2A73EDDF003BE85B /* ProcessorFilterItemContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127743D2A73EDDF003BE85B /* ProcessorFilterItemContract.swift */; };
 		7168F0F52A71899600BB3AA0 /* FiltersScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */; };
 		7168F0F62A71899600BB3AA0 /* FiltersSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */; };
 		7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */; };
@@ -85,6 +89,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		712774352A73DED7003BE85B /* AppCIProcessorLayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayerType.swift; sourceTree = "<group>"; };
+		712774372A73DEE8003BE85B /* AppCIProcessorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayer.swift; sourceTree = "<group>"; };
+		7127743B2A73EC50003BE85B /* ProcessorFilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessorFilterItem.swift; sourceTree = "<group>"; };
+		7127743D2A73EDDF003BE85B /* ProcessorFilterItemContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessorFilterItemContract.swift; sourceTree = "<group>"; };
 		7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenter.swift; sourceTree = "<group>"; };
 		7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouterContract.swift; sourceTree = "<group>"; };
 		7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouter.swift; sourceTree = "<group>"; };
@@ -175,6 +183,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		712774342A73DE6B003BE85B /* CIProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				712774392A73EC22003BE85B /* Models */,
+				712774372A73DEE8003BE85B /* AppCIProcessorLayer.swift */,
+				712774352A73DED7003BE85B /* AppCIProcessorLayerType.swift */,
+			);
+			path = CIProcessor;
+			sourceTree = "<group>";
+		};
+		712774392A73EC22003BE85B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7127743A2A73EC2F003BE85B /* ProcessorFilterItem */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7127743A2A73EC2F003BE85B /* ProcessorFilterItem */ = {
+			isa = PBXGroup;
+			children = (
+				7127743B2A73EC50003BE85B /* ProcessorFilterItem.swift */,
+				7127743D2A73EDDF003BE85B /* ProcessorFilterItemContract.swift */,
+			);
+			path = ProcessorFilterItem;
+			sourceTree = "<group>";
+		};
 		7168F0E82A71896A00BB3AA0 /* FiltersScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +474,7 @@
 		71C91F522A70DF9500C378F4 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				712774342A73DE6B003BE85B /* CIProcessor */,
 				71C91F532A70DFAE00C378F4 /* UILayer */,
 			);
 			path = Layers;
@@ -885,6 +921,7 @@
 				7168F10F2A718B8E00BB3AA0 /* FiltersScenePopUpMenuViewModel.swift in Sources */,
 				71D9D8E22A71486C00BC9F65 /* MainSceneViewController.swift in Sources */,
 				71C91F5F2A70E25400C378F4 /* AppUILayerStyleWorkerType.swift in Sources */,
+				7127743C2A73EC50003BE85B /* ProcessorFilterItem.swift in Sources */,
 				71C91F802A70E87E00C378F4 /* InitialScenePresenter.swift in Sources */,
 				71C91F6B2A70E70F00C378F4 /* BaseViewController.swift in Sources */,
 				7168F0F62A71899600BB3AA0 /* FiltersSceneRouterContract.swift in Sources */,
@@ -894,10 +931,12 @@
 				71C91F5D2A70E1F800C378F4 /* AppUILayerStyleWorker.swift in Sources */,
 				71D9D8E62A71486C00BC9F65 /* MainSceneViewModel.swift in Sources */,
 				7168F1172A718D6800BB3AA0 /* TableViewProviderType.swift in Sources */,
+				712774362A73DED7003BE85B /* AppCIProcessorLayerType.swift in Sources */,
 				71C91F872A70E87E00C378F4 /* InitialSceneViewModel.swift in Sources */,
 				71D9D8F42A714AB800BC9F65 /* BlurTransitionAnimator.swift in Sources */,
 				71D9D8E42A71486C00BC9F65 /* MainSceneInteractorService.swift in Sources */,
 				71C91F632A70E30600C378F4 /* AppUILayerDeviceWorker.swift in Sources */,
+				712774382A73DEE8003BE85B /* AppCIProcessorLayer.swift in Sources */,
 				7168F1232A718F8D00BB3AA0 /* MainSceneFiltersCellViewModel.swift in Sources */,
 				718D164B2A6FB7C300E59160 /* AppRouter.swift in Sources */,
 				71C91F832A70E87E00C378F4 /* InitialSceneViewController.swift in Sources */,
@@ -924,6 +963,7 @@
 				7168F1112A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift in Sources */,
 				71D9D8D12A71477900BC9F65 /* NSObject + Extensions.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
+				7127743E2A73EDDF003BE85B /* ProcessorFilterItemContract.swift in Sources */,
 				7168F0FC2A71899600BB3AA0 /* FiltersSceneViewModel.swift in Sources */,
 				71C91F842A70E87E00C378F4 /* InitialSceneInteractor.swift in Sources */,
 				71D9D90C2A7152E800BC9F65 /* ApplyFilterButton.swift in Sources */,

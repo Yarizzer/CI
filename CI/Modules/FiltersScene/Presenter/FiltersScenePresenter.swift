@@ -14,6 +14,10 @@ class FiltersScenePresenter {
         service.model.needToHidePopUpMenu.subscribe(self) { [weak self] data in
             self?.viewController?.update(viewModelDataType: .needToHidePopUpMenu(withValue: data.newValue))
         }
+        
+        service.model.selectedItemDidChanged.subscribe(self) { [weak self] data in
+            self?.viewController?.update(viewModelDataType: .updateTitle(with: data.newValue))
+        }
 	}
 	
 	private var viewController: FiltersSceneViewControllerType?

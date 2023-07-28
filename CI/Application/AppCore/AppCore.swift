@@ -10,9 +10,11 @@ class AppCore {
     
     private init() {
         self.appUIL = AppUILayer()
+        self.appCIL = AppCIProcessorLayer()
     }
     
     private let appUIL: AppUILayerType
+    private let appCIL: AppCIProcessorLayerType
 }
 
 extension AppCore: AppCoreSessionType {
@@ -26,4 +28,8 @@ extension AppCore: AppCoreSessionType {
 
 extension AppCore: AppCoreUILayerType {
     var uiLayer: AppUILayerType { appUIL }
+}
+
+extension AppCore: AppCoreCIProcessorLayerType {
+    var ciProcessorLayer: AppCIProcessorLayerType { appCIL }
 }

@@ -14,3 +14,7 @@ protocol AppCoreSessionType {
 protocol AppCoreUILayerType {
     var uiLayer: AppUILayerType { get }
 }
+
+protocol AppCoreCIProcessorLayerType {
+    var ciProcessorLayer: AppCIProcessorLayerType { get }
+}

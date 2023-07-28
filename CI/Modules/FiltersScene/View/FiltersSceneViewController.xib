@@ -61,7 +61,7 @@
                             <rect key="frame" x="0.0" y="50" width="320" height="558"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzt-CD-FOU" customClass="FiltersScenePopUpMenu" customModule="CI" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="568" width="320" height="227"/>
+                            <rect key="frame" x="0.0" y="568" width="320" height="284"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
@@ -69,7 +69,7 @@
                     <constraints>
                         <constraint firstItem="Rzt-CD-FOU" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="9AL-2X-nes"/>
                         <constraint firstItem="Rzt-CD-FOU" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="bottom" id="9Pz-qU-25r"/>
-                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="2:5" id="Ak5-Dc-POn"/>
+                        <constraint firstItem="Rzt-CD-FOU" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="1:2" id="Ak5-Dc-POn"/>
                         <constraint firstItem="sKH-W9-s26" firstAttribute="top" secondItem="F0S-sf-IKf" secondAttribute="bottom" id="DLQ-zu-YUo"/>
                         <constraint firstItem="sKH-W9-s26" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="KJr-nk-WUS"/>
                         <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>

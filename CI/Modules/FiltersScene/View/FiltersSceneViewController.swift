@@ -65,6 +65,8 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
 	func update(viewModelDataType: FiltersSceneViewControllerViewModel.ViewModelDataType) {
 		switch viewModelDataType {
 		case .initialSetup(let model):
+            sceneTitle.text = model.initialSceneTitle
+            
             popUpMenu.setup(with: model.getPopUpMenuViewModel())
             
             guard let image = UIImage(named: model.initialImageName) else { return }
@@ -79,6 +81,21 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
                 
                 sSelf.view.layoutIfNeeded()
             })
+        case .updateTitle(let data):
+            guard let data else { return }
+            
+            UIView.animate(withDuration: Constants.titleAD / 2, delay: 0, options: [.allowUserInteraction], animations: extractSelf { sSelf in
+                sSelf.sceneTitle.alpha = Constants.alpha.min
+            }, completion: extractSelf { sSelf, _ in
+                sSelf.sceneTitle.text = data
+                UIView.animate(withDuration: Constants.titleAD, delay: 0, options: [.allowUserInteraction], animations: sSelf.extractSelf { sSelf in
+                    sSelf.sceneTitle.alpha = Constants.alpha.max
+                })
+            })
+        case .updateImage(let imageData):
+            guard let image = UIImage(data: imageData) else { return }
+            
+            #warning("finish with animation")
 		}
 	}
 }
@@ -90,9 +107,10 @@ extension FiltersSceneViewController {
         //Animation duration
         static let initialAD: Double = 0.5
         static let popUpMenuAD: Double = 0.5
+        static let titleAD: Double = 0.2
         //Constraints
         static let topConstraintExtraValue: CGFloat = 30.0
         static let popUpTopConstraintDefaultValue: CGFloat = -40.0
-        static let popUpTopConstraintExtendedValue: CGFloat = (-AppCore.shared.uiLayer.device.screenSize.height / 5) * 2
+        static let popUpTopConstraintExtendedValue: CGFloat = -AppCore.shared.uiLayer.device.screenSize.height / 2
 	}
 }
