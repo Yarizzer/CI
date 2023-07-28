@@ -68,10 +68,6 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
             sceneTitle.text = model.initialSceneTitle
             
             popUpMenu.setup(with: model.getPopUpMenuViewModel())
-            
-            guard let image = UIImage(named: model.initialImageName) else { return }
-            
-            imageView.image = image
         case .needToHidePopUpMenu(let value):
             guard let value else { return }
             
@@ -93,9 +89,16 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
                 })
             })
         case .updateImage(let imageData):
-            guard let image = UIImage(data: imageData) else { return }
+            guard let imageData, let image = UIImage(data: imageData) else { return }
             
-            #warning("finish with animation")
+            UIView.animate(withDuration: Constants.imageUpdateAD / 2, delay: 0, options: [.allowUserInteraction], animations: extractSelf { sSelf in
+                sSelf.imageView.alpha = Constants.alpha.min
+            }, completion: extractSelf { sSelf, _ in
+                sSelf.imageView.image = image
+                UIView.animate(withDuration: Constants.imageUpdateAD, delay: 0, options: [.allowUserInteraction], animations: sSelf.extractSelf { sSelf in
+                    sSelf.imageView.alpha = Constants.alpha.max
+                })
+            })
 		}
 	}
 }
@@ -108,6 +111,7 @@ extension FiltersSceneViewController {
         static let initialAD: Double = 0.5
         static let popUpMenuAD: Double = 0.5
         static let titleAD: Double = 0.2
+        static let imageUpdateAD: Double = 1.0
         //Constraints
         static let topConstraintExtraValue: CGFloat = 30.0
         static let popUpTopConstraintDefaultValue: CGFloat = -40.0

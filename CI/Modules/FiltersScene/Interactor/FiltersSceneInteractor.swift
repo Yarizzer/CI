@@ -22,8 +22,7 @@ extension FiltersSceneInteractor: FiltersSceneInteractable {
 	func makeRequest(requestType: FiltersSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
-        case .viewIsReady:
-            #warning("fit smth here")
+        case .viewIsReady: service.setupSubscription()
         case .routeBack: router.dismiss()
 		}
 	}

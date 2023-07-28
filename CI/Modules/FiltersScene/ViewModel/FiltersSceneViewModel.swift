@@ -27,6 +27,7 @@ protocol FiltersSceneViewModelType {
 class FiltersSceneViewModel: NSObject {
     //Subscription
     func setupSubscription() {
+        data = AppCore.shared.ciProcessorLayer.initialData
         AppCore.shared.ciProcessorLayer.output.subscribe(self, closure: extractSelf { sSelf, data in
             sSelf.data = data.newValue
         })

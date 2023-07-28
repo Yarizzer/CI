@@ -18,6 +18,10 @@ class FiltersScenePresenter {
         service.model.selectedItemDidChanged.subscribe(self) { [weak self] data in
             self?.viewController?.update(viewModelDataType: .updateTitle(with: data.newValue))
         }
+        
+        service.model.newDataDidFetched.subscribe(self) { [weak self] data in
+            self?.viewController?.update(viewModelDataType: .updateImage(with: self?.service.model.imageData))
+        }
 	}
 	
 	private var viewController: FiltersSceneViewControllerType?

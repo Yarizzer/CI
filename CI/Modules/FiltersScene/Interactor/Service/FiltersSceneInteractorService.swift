@@ -6,7 +6,9 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol FiltersSceneInteractorServiceType{ }
+protocol FiltersSceneInteractorServiceType{
+    func setupSubscription()
+}
 
 class FiltersSceneInteractorService {
 	init(withModel model: FiltersSceneViewModelType) {
@@ -16,4 +18,8 @@ class FiltersSceneInteractorService {
 	private let viewModel: FiltersSceneViewModelType
 }
 
-extension FiltersSceneInteractorService: FiltersSceneInteractorServiceType { }
+extension FiltersSceneInteractorService: FiltersSceneInteractorServiceType {
+    func setupSubscription() {
+        viewModel.setupSubscription()
+    }
+}

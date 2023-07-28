@@ -8,5 +8,8 @@
 import Foundation
 
 protocol AppCIProcessorLayerType {
+    //Publishers
     var output: Publisher <Data?> { get }
+    //Prop's
+    var initialData: Data? { get }
 }
