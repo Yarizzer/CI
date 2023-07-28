@@ -11,5 +11,8 @@ protocol AppCIProcessorLayerType {
     //Publishers
     var output: Publisher <Data?> { get }
     //Prop's
-    var initialData: Data? { get }
+    var source: Data? { get }
+    var filters: [ProcessorFilterItem] { get }
+    
+    func process(with filter: ProcessorFilterItem)
 }

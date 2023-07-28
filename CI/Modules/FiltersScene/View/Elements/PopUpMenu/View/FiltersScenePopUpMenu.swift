@@ -224,17 +224,14 @@ class FiltersScenePopUpMenu: UIView {
         provider = PickerViewProvider(for: pickerView, with: providerModel)
         
         provider?.onConfigureView = { [weak self] row, component in
-            guard let item = self?.model?.getItemModel(for: row, component: component) else { return PickerViewItemRegular() }
+            guard let itemModel = self?.model?.getItemModel(for: row, component: component) else { return PickerViewCIFilterItem() }
             
-            switch item.type {
-            case .regular:
-                guard let item = (item as? PickerViewItemRegularViewModelType) else { return PickerViewItemRegular() }
-                
-                let view = PickerViewItemRegular()
-                view.setup(with: item)
-                
-                return view
-            }
+//            guard let item = (item as? PickerViewItemRegularViewModelType) else { return PickerViewCIFilterItem() }
+            
+            let view = PickerViewCIFilterItem()
+            view.setup(with: itemModel)
+            
+            return view
         }
         
         provider?.didSelectRow = extractSelf { sSelf, row in
@@ -246,7 +243,7 @@ class FiltersScenePopUpMenu: UIView {
         guard let showHideButton else { return }
         
         showHideButton.toggle() { [weak self] isHidden in
-            self?.model?.updateNeedToShowValue(with: isHidden)
+            self?.model?.updateNeedToHideValue(with: isHidden)
         }
     }
     

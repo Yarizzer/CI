@@ -25,7 +25,7 @@
 		7168F1002A71899600BB3AA0 /* FiltersScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0F42A71899600BB3AA0 /* FiltersScenePresenterService.swift */; };
 		7168F10D2A718B2C00BB3AA0 /* FiltersScenePopUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F10C2A718B2C00BB3AA0 /* FiltersScenePopUpMenu.swift */; };
 		7168F10F2A718B8E00BB3AA0 /* FiltersScenePopUpMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F10E2A718B8E00BB3AA0 /* FiltersScenePopUpMenuViewModel.swift */; };
-		7168F1112A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift */; };
+		7168F1112A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelType.swift */; };
 		7168F1142A718D3D00BB3AA0 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1132A718D3D00BB3AA0 /* TableViewProvider.swift */; };
 		7168F1172A718D6800BB3AA0 /* TableViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1162A718D6800BB3AA0 /* TableViewProviderType.swift */; };
 		7168F1192A718DA200BB3AA0 /* TableViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1182A718DA200BB3AA0 /* TableViewProviderViewModel.swift */; };
@@ -83,9 +83,8 @@
 		71D9D8FB2A714C2100BC9F65 /* PickerViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8FA2A714C2100BC9F65 /* PickerViewProviderType.swift */; };
 		71D9D8FD2A714C3600BC9F65 /* PickerViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D8FC2A714C3600BC9F65 /* PickerViewProviderViewModel.swift */; };
 		71D9D90C2A7152E800BC9F65 /* ApplyFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D90B2A7152E800BC9F65 /* ApplyFilterButton.swift */; };
-		71D9D90F2A7153BB00BC9F65 /* PickerViewItemContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D90E2A7153BB00BC9F65 /* PickerViewItemContract.swift */; };
-		71D9D9142A71540400BC9F65 /* PickerViewItemRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D9132A71540400BC9F65 /* PickerViewItemRegular.swift */; };
-		71D9D9162A71543700BC9F65 /* PickerViewItemRegularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D9152A71543700BC9F65 /* PickerViewItemRegularViewModel.swift */; };
+		71D9D9142A71540400BC9F65 /* PickerViewCIFilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D9132A71540400BC9F65 /* PickerViewCIFilterItem.swift */; };
+		71D9D9162A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9D9152A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +106,7 @@
 		7168F0F42A71899600BB3AA0 /* FiltersScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenterService.swift; sourceTree = "<group>"; };
 		7168F10C2A718B2C00BB3AA0 /* FiltersScenePopUpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePopUpMenu.swift; sourceTree = "<group>"; };
 		7168F10E2A718B8E00BB3AA0 /* FiltersScenePopUpMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePopUpMenuViewModel.swift; sourceTree = "<group>"; };
-		7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePopUpMenuViewModelContract.swift; sourceTree = "<group>"; };
+		7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePopUpMenuViewModelType.swift; sourceTree = "<group>"; };
 		7168F1132A718D3D00BB3AA0 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		7168F1162A718D6800BB3AA0 /* TableViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderType.swift; sourceTree = "<group>"; };
 		7168F1182A718DA200BB3AA0 /* TableViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderViewModel.swift; sourceTree = "<group>"; };
@@ -167,9 +166,8 @@
 		71D9D8FA2A714C2100BC9F65 /* PickerViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewProviderType.swift; sourceTree = "<group>"; };
 		71D9D8FC2A714C3600BC9F65 /* PickerViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewProviderViewModel.swift; sourceTree = "<group>"; };
 		71D9D90B2A7152E800BC9F65 /* ApplyFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFilterButton.swift; sourceTree = "<group>"; };
-		71D9D90E2A7153BB00BC9F65 /* PickerViewItemContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewItemContract.swift; sourceTree = "<group>"; };
-		71D9D9132A71540400BC9F65 /* PickerViewItemRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewItemRegular.swift; sourceTree = "<group>"; };
-		71D9D9152A71543700BC9F65 /* PickerViewItemRegularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewItemRegularViewModel.swift; sourceTree = "<group>"; };
+		71D9D9132A71540400BC9F65 /* PickerViewCIFilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewCIFilterItem.swift; sourceTree = "<group>"; };
+		71D9D9152A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewCIFilterItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				7168F10E2A718B8E00BB3AA0 /* FiltersScenePopUpMenuViewModel.swift */,
-				7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift */,
+				7168F1102A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -799,25 +797,24 @@
 		71D9D90D2A71538800BC9F65 /* PickerViewItem */ = {
 			isa = PBXGroup;
 			children = (
-				71D9D9102A7153D400BC9F65 /* Regular */,
-				71D9D90E2A7153BB00BC9F65 /* PickerViewItemContract.swift */,
+				71D9D9102A7153D400BC9F65 /* CIFilterItem */,
 			);
 			path = PickerViewItem;
 			sourceTree = "<group>";
 		};
-		71D9D9102A7153D400BC9F65 /* Regular */ = {
+		71D9D9102A7153D400BC9F65 /* CIFilterItem */ = {
 			isa = PBXGroup;
 			children = (
 				71D9D9122A7153E100BC9F65 /* ViewModel */,
 				71D9D9112A7153DB00BC9F65 /* View */,
 			);
-			path = Regular;
+			path = CIFilterItem;
 			sourceTree = "<group>";
 		};
 		71D9D9112A7153DB00BC9F65 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				71D9D9132A71540400BC9F65 /* PickerViewItemRegular.swift */,
+				71D9D9132A71540400BC9F65 /* PickerViewCIFilterItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -825,7 +822,7 @@
 		71D9D9122A7153E100BC9F65 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				71D9D9152A71543700BC9F65 /* PickerViewItemRegularViewModel.swift */,
+				71D9D9152A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -910,7 +907,6 @@
 				7168F1142A718D3D00BB3AA0 /* TableViewProvider.swift in Sources */,
 				71C91F552A70DFCC00C378F4 /* AppUILayer.swift in Sources */,
 				71D9D8FD2A714C3600BC9F65 /* PickerViewProviderViewModel.swift in Sources */,
-				71D9D90F2A7153BB00BC9F65 /* PickerViewItemContract.swift in Sources */,
 				7168F1002A71899600BB3AA0 /* FiltersScenePresenterService.swift in Sources */,
 				71D9D8E32A71486C00BC9F65 /* MainSceneInteractor.swift in Sources */,
 				71D9D8E02A71486C00BC9F65 /* MainSceneRouterContract.swift in Sources */,
@@ -950,7 +946,7 @@
 				71D9D8E12A71486C00BC9F65 /* MainSceneRouter.swift in Sources */,
 				71B102972A7248C800944FE6 /* BackButton.swift in Sources */,
 				7168F0F82A71899600BB3AA0 /* FiltersSceneViewController.swift in Sources */,
-				71D9D9142A71540400BC9F65 /* PickerViewItemRegular.swift in Sources */,
+				71D9D9142A71540400BC9F65 /* PickerViewCIFilterItem.swift in Sources */,
 				71C91F822A70E87E00C378F4 /* InitialSceneRouter.swift in Sources */,
 				7168F10D2A718B2C00BB3AA0 /* FiltersScenePopUpMenu.swift in Sources */,
 				7168F1272A7197E300BB3AA0 /* MainSceneViewModelContract.swift in Sources */,
@@ -960,7 +956,7 @@
 				71D9D8F82A714BFA00BC9F65 /* PickerViewProvider.swift in Sources */,
 				7168F0FE2A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift in Sources */,
 				7168F0FF2A71899600BB3AA0 /* FiltersScenePresenterContract.swift in Sources */,
-				7168F1112A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelContract.swift in Sources */,
+				7168F1112A718BF200BB3AA0 /* FiltersScenePopUpMenuViewModelType.swift in Sources */,
 				71D9D8D12A71477900BC9F65 /* NSObject + Extensions.swift in Sources */,
 				71C91F582A70E08400C378F4 /* AppUILayerContract.swift in Sources */,
 				7127743E2A73EDDF003BE85B /* ProcessorFilterItemContract.swift in Sources */,
@@ -971,7 +967,7 @@
 				7168F0FB2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift in Sources */,
 				71D9D8E92A71486C00BC9F65 /* MainScenePresenterContract.swift in Sources */,
 				7168F0FA2A71899600BB3AA0 /* FiltersSceneInteractorService.swift in Sources */,
-				71D9D9162A71543700BC9F65 /* PickerViewItemRegularViewModel.swift in Sources */,
+				71D9D9162A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift in Sources */,
 				7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */,
 				71C91F862A70E87E00C378F4 /* InitialSceneInteractorContract.swift in Sources */,
 				71C91F612A70E2CC00C378F4 /* AppUILayerDeviceWorkerType.swift in Sources */,

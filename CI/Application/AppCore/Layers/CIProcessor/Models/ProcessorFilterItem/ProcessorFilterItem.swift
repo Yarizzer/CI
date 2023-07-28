@@ -8,4 +8,5 @@
 struct ProcessorFilterItem {
     let key: String
     let type: ProcessorFilterItemType
+    let title: String
 }

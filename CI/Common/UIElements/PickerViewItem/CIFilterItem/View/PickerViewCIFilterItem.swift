@@ -1,5 +1,5 @@
 //
-//  PickerViewItemRegular.swift
+//  PickerViewCIFilterItem.swift
 //  CI
 //
 //  Created by Yaroslav Abaturov on 26.07.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PickerViewItemRegular: UIView {
+class PickerViewCIFilterItem: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -55,10 +55,10 @@ class PickerViewItemRegular: UIView {
         contentTitle.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
-    func setup(with model: PickerViewItemRegularViewModelType) {
+    func setup(with model: PickerViewCIFilterItemViewModelType) {
         guard let contentTitle else { return }
         
-        contentTitle.text = model.contentData
+        contentTitle.text = model.title
     }
     
     private var contentTitle: UILabel?
