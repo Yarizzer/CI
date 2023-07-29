@@ -66,7 +66,7 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
     var source: Data? { sourceData }
     var filters: [ProcessorFilterItem] { filterItems }
     
-    func process(with filter: ProcessorFilterItem, options: []) {
+    func process(with filter: ProcessorFilterItem) {
         switch filter.type {
         case .boxBlur:
             writeLog(type: .info, message: "Plug")
