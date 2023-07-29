@@ -6,5 +6,5 @@
 //
 
 enum ProcessorFilterItemType {
-    case boxBlur, zoomBlur, colorMatrix, hueAdjust, sepia(intensity: Float)
+    case boxBlur, zoomBlur, colorMatrix, hueAdjust, sepia
 }
