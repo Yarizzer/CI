@@ -67,21 +67,41 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
     var filters: [ProcessorFilterItem] { filterItems }
     
     func process(for filter: ProcessorFilterItem, with demands: ProcessorFilterDemands) {
+        guard let data = source, let ciImage = CIImage(data: data) else { return }
+        
+        
         switch filter.type {
         case .boxBlur:
-            writeLog(type: .info, message: "Plug")
+            let params: [String: Any] = [kCIInputImageKey: ciImage,
+                                         kCIInputRadiusKey: demands.topLeft * 100]
+            
+            let filter = CIFilter(name: filter.key, parameters: params)
+            
+            guard let outputImage = filter?.outputImage else { return }
+            
+            output.value = UIImage(ciImage: outputImage).pngData()
         case .zoomBlur:
-            writeLog(type: .info, message: "Plug")
+            let centerVector = CIVector(x: AppCore.shared.uiLayer.device.screenSize.width / CGFloat(demands.topLeft),
+                                        y: AppCore.shared.uiLayer.device.screenSize.height / CGFloat(demands.topRight))
+            
+            let params: [String: Any] = [kCIInputImageKey: ciImage,
+                                         kCIInputCenterKey: centerVector,
+                                         kCIInputAmountKey: demands.bottomLeft * 100]
+            
+            let filter = CIFilter(name: filter.key, parameters: params)
+            
+            guard let outputImage = filter?.outputImage else { return }
+            
+            output.value = UIImage(ciImage: outputImage).pngData()
         case .colorMatrix:
             writeLog(type: .info, message: "Plug")
         case .hueAdjust:
             writeLog(type: .info, message: "Plug")
         case .sepia:
-            guard let data = source, let ciImage = CIImage(data: data) else { return }
-                    
-            let filter = CIFilter(name: filter.key)
-            filter?.setValue(ciImage, forKey: kCIInputImageKey)
-            filter?.setValue(demands.topLeft, forKey: kCIInputIntensityKey)
+            let params: [String : Any] = [kCIInputImageKey : ciImage,
+                                      kCIInputIntensityKey : demands.topLeft]
+            
+            let filter = CIFilter(name: filter.key, parameters: params)
             
             guard let outputImage = filter?.outputImage else { return }
             
