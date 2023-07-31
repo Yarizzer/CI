@@ -10,3 +10,10 @@ struct ProcessorFilterItem {
     let type: ProcessorFilterItemType
     let title: String
 }
+
+struct ProcessorFilterDemands {
+    let topLeft: Float
+    let topRight: Float
+    let bottomLeft: Float
+    let bottomRight: Float
+}

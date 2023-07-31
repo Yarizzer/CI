@@ -12,6 +12,7 @@ protocol FiltersScenePopUpMenuViewModelType {
     
     func updateNeedToHideValue(with data: Bool)
     func updateSelectItemIndex(with index: Int)
+    func updateSliderValue(for sliderType: FiltersScenePopUpMenuSliders)
     
     func applyFilters()
     func getItemModel(for row: Int, component: Int) -> PickerViewCIFilterItemViewModelType

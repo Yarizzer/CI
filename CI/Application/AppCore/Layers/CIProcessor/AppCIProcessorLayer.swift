@@ -66,7 +66,7 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
     var source: Data? { sourceData }
     var filters: [ProcessorFilterItem] { filterItems }
     
-    func process(with filter: ProcessorFilterItem) {
+    func process(for filter: ProcessorFilterItem, with demands: ProcessorFilterDemands) {
         switch filter.type {
         case .boxBlur:
             writeLog(type: .info, message: "Plug")
@@ -81,7 +81,7 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
                     
             let filter = CIFilter(name: filter.key)
             filter?.setValue(ciImage, forKey: kCIInputImageKey)
-            filter?.setValue(0.5, forKey: kCIInputIntensityKey)
+            filter?.setValue(demands.topLeft, forKey: kCIInputIntensityKey)
             
             guard let outputImage = filter?.outputImage else { return }
             

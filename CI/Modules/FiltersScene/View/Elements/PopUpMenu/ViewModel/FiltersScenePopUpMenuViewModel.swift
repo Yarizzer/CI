@@ -9,6 +9,11 @@ class FiltersScenePopUpMenuViewModel {
     init() {
         self.items = AppCore.shared.ciProcessorLayer.filters
         self.selectedItemIndex = 0
+        
+        topLeftSliderValue = 0.0
+        topRightSliderValue = 0.0
+        bottomLeftSliderValue = 0.0
+        bottomRightSliderValue = 0.0
     }
     //Publishers
     var needToHide: Publisher<Bool?> = Publisher(nil)
@@ -20,6 +25,10 @@ class FiltersScenePopUpMenuViewModel {
             selectedItemDidChanged.value = items[selectedItemIndex].title
         }
     }
+    private var topLeftSliderValue: Float
+    private var topRightSliderValue: Float
+    private var bottomLeftSliderValue: Float
+    private var bottomRightSliderValue: Float
 }
 
 extension FiltersScenePopUpMenuViewModel: FiltersScenePopUpMenuViewModelType {
@@ -32,11 +41,25 @@ extension FiltersScenePopUpMenuViewModel: FiltersScenePopUpMenuViewModelType {
     }
     
     func applyFilters() {
-        AppCore.shared.ciProcessorLayer.process(with: items[selectedItemIndex])
+        let demands = ProcessorFilterDemands(topLeft: topLeftSliderValue,
+                                             topRight: topRightSliderValue,
+                                             bottomLeft: bottomLeftSliderValue,
+                                             bottomRight: bottomRightSliderValue)
+        
+        AppCore.shared.ciProcessorLayer.process(for: items[selectedItemIndex], with: demands)
     }
     
     func getItemModel(for row: Int, component: Int) -> PickerViewCIFilterItemViewModelType {
         PickerViewCIFilterItemViewModel(with: items[row])
+    }
+    
+    func updateSliderValue(for sliderType: FiltersScenePopUpMenuSliders) {
+        switch sliderType {
+        case .topLeft(let value): topLeftSliderValue = value
+        case .topRight(let value): topRightSliderValue = value
+        case .bottomLeft(let value): bottomLeftSliderValue = value
+        case .bottomRight(let value): bottomRightSliderValue = value
+        }
     }
 }
 

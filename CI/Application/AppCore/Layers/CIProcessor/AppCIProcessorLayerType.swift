@@ -14,5 +14,5 @@ protocol AppCIProcessorLayerType {
     var source: Data? { get }
     var filters: [ProcessorFilterItem] { get }
     
-    func process(with filter: ProcessorFilterItem)
+    func process(for filter: ProcessorFilterItem, with demands: ProcessorFilterDemands)
 }

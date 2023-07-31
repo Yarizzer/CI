@@ -247,28 +247,44 @@ class FiltersScenePopUpMenu: UIView {
         }
     }
     
-    @objc private func topLeftSliderValueDidChanged() {
+    @objc private func topLeftSliderValueDidChanged(_ sender: UISlider, with value: Float) {
         guard let value = topLeftSlider?.value else { return }
         
         topLeftSliderValueLabel?.text = "\(value)"
+        
+        guard let model else { return }
+        
+        model.updateSliderValue(for: .topLeft(value: Float(sender.value)))
     }
     
-    @objc private func topRightSliderValueDidChanged() {
+    @objc private func topRightSliderValueDidChanged(_ sender: UISlider) {
         guard let value = topRightSlider?.value else { return }
         
         topRightSliderValueLabel?.text = "\(value)"
+        
+        guard let model else { return }
+        
+        model.updateSliderValue(for: .topRight(value: Float(sender.value)))
     }
     
-    @objc private func bottomLeftSliderValueDidChanged() {
+    @objc private func bottomLeftSliderValueDidChanged(_ sender: UISlider) {
         guard let value = bottomLeftSlider?.value else { return }
         
         bottomLeftSliderValueLabel?.text = "\(value)"
+        
+        guard let model else { return }
+        
+        model.updateSliderValue(for: .bottomLeft(value: Float(sender.value)))
     }
     
-    @objc private func bottomRightSliderValueDidChanged() {
+    @objc private func bottomRightSliderValueDidChanged(_ sender: UISlider) {
         guard let value = bottomRightSlider?.value else { return }
         
         bottomRightSliderValueLabel?.text = "\(value)"
+        
+        guard let model else { return }
+        
+        model.updateSliderValue(for: .bottomRight(value: Float(sender.value)))
     }
     
     @objc private func applyButtonAction() {
