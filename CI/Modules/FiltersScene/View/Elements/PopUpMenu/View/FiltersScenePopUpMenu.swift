@@ -22,12 +22,6 @@ class FiltersScenePopUpMenu: UIView {
         setupView()
         setupConstraints()
     }
-    //MARK: - System
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        #warning("remove if empty")
-    }
     //MARK: - SetupView
     private func setupView() {
         backgroundColor = AppCore.shared.uiLayer.style.colorClear
@@ -225,8 +219,6 @@ class FiltersScenePopUpMenu: UIView {
         
         provider?.onConfigureView = { [weak self] row, component in
             guard let itemModel = self?.model?.getItemModel(for: row, component: component) else { return PickerViewCIFilterItem() }
-            
-//            guard let item = (item as? PickerViewItemRegularViewModelType) else { return PickerViewCIFilterItem() }
             
             let view = PickerViewCIFilterItem()
             view.setup(with: itemModel)
