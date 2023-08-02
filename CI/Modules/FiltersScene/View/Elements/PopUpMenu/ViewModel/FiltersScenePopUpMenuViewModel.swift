@@ -10,10 +10,10 @@ class FiltersScenePopUpMenuViewModel {
         self.items = AppCore.shared.ciProcessorLayer.filters
         self.selectedItemIndex = 0
         
-        topLeftSliderValue = 0.0
-        topRightSliderValue = 0.0
-        bottomLeftSliderValue = 0.0
-        bottomRightSliderValue = 0.0
+        topLeftSliderValue = Constants.initialSlidersValue
+        topRightSliderValue = Constants.initialSlidersValue
+        bottomLeftSliderValue = Constants.initialSlidersValue
+        bottomRightSliderValue = Constants.initialSlidersValue
     }
     //Publishers
     var needToHide: Publisher<Bool?> = Publisher(nil)
@@ -77,5 +77,6 @@ extension FiltersScenePopUpMenuViewModel {
         static let numberOfComponents = 1
         static let rowHeightValue: Float = 50.0
         static let rowWidthValue: Float = Float(AppCore.shared.uiLayer.device.screenSize.width - 20.0)
+        static let initialSlidersValue: Float = 0.0
     }
 }
