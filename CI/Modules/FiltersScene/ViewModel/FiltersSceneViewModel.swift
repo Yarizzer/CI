@@ -68,6 +68,5 @@ extension FiltersSceneViewModel: FiltersSceneViewModelType {
 extension FiltersSceneViewModel {
     private struct Constants {
         static let initialTitleValue = ""
-//        static let initialImageNameValue = "Flower"
     }
 }
