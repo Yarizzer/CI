@@ -77,7 +77,6 @@ extension MainSceneViewController: MainSceneViewControllerType {
             }
 
             provider?.onSelectCell = extractSelf { sSelf, indexPath in
-                writeLog(type: .info, message: "Cell with index \(indexPath.row) did tapped")
                 AppCore.shared.uiLayer.device.generateFeedback(with: .success)
                 sSelf.interactor?.makeRequest(requestType: .itemSelected(withIndex: indexPath.row))
             }
