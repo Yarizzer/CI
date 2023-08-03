@@ -264,8 +264,8 @@
 		7168F1052A7189D000BB3AA0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */,
 				7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */,
+				7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";

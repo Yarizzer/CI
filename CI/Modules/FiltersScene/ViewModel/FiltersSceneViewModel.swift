@@ -20,7 +20,6 @@ protocol FiltersSceneViewModelType {
     var initialSceneTitle: String { get }
     var imageData: Data? { get }
     //MARK: - Functions
-//    var initialImageName: String { get }
     func getPopUpMenuViewModel() -> FiltersScenePopUpMenuViewModelType
 }
 
@@ -46,7 +45,6 @@ class FiltersSceneViewModel: NSObject {
 
 extension FiltersSceneViewModel: FiltersSceneViewModelType {
     //MARK: - Prop's
-//    var initialImageName: String { Constants.initialImageNameValue }
     var initialSceneTitle: String { Constants.initialTitleValue }
     var imageData: Data? { data }
     //MARK: - Functions
