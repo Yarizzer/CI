@@ -10,21 +10,19 @@ class Publisher<T> {
         self.value = value
     }
     
-    public func subscribe(_ subscriber: AnyObject, closure: @escaping ((oldValue: T, newValue: T)) -> Void) {
-        self.subscribers.append(Subscriber(owner: subscriber, closure: closure))
-        self.cleanDeadSubscribers()
+    public func subscribe(_ subscriber: AnyObject, closure: @escaping ((oldValue: T, newValue: T)) -> ()) {
+        subscribers.append(Subscriber(owner: subscriber, closure: closure))
+        cleanDeadSubscribers()
     }
     
     private func cleanDeadSubscribers() {
-        self.subscribers = self.subscribers.filter { $0.owner != nil }
+        subscribers = subscribers.filter { $0.owner != nil }
     }
     
     public var value: T {
         didSet {
-            self.cleanDeadSubscribers()
-            for subscriber in self.subscribers {
-                subscriber.closure((oldValue, self.value))
-            }
+            cleanDeadSubscribers()
+            subscribers.forEach { $0.closure((oldValue, self.value)) }
         }
     }
     
@@ -32,11 +30,11 @@ class Publisher<T> {
 }
 
 private struct Subscriber<T> {
-    init (owner: AnyObject, closure: @escaping ((oldValue: T, newValue: T)) -> Void) {
+    init (owner: AnyObject, closure: @escaping ((oldValue: T, newValue: T)) -> ()) {
         self.owner = owner
         self.closure = closure
     }
     
     weak var owner: AnyObject?
-    let closure: ((oldValue: T, newValue: T)) -> Void
+    let closure: ((oldValue: T, newValue: T)) -> ()
 }
