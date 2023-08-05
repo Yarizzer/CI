@@ -42,7 +42,7 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
         case .appearElements:
             UIView.animate(withDuration: Constants.initialAD, delay: 0, options: [.curveEaseInOut, .allowUserInteraction], animations: extractSelf { sSelf in
                 sSelf.mainImage.alpha = Constants.alphaValues.max
-            }, completion: extractSelf { sSelf, finished in
+            }, completion: extractSelf { sSelf, _ in
                 sSelf.interactor?.makeRequest(requestType: .routeToMainScene)
             })
 		}
