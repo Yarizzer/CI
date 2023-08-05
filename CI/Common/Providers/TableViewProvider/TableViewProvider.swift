@@ -19,7 +19,7 @@ class TableViewProvider: NSObject, TableViewProviderType {
     }
     
     var onConfigureCell: ((IndexPath) -> UITableViewCell)?
-    var onSelectCell: ((IndexPath) -> Void)?
+    var onSelectCell: ((IndexPath) -> ())?
     
     func registerCells(_ cells: [UITableViewCell.Type]) {
         cells.forEach { registerCell($0) }
