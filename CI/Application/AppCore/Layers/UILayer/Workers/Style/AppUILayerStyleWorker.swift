@@ -66,6 +66,6 @@ extension AppUILayerStyleWorker {
         static let mediumFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 15) ?? UIFont.systemFont(ofSize: 15)
         static let smallFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 12) ?? UIFont.systemFont(ofSize: 12)
         static let layerData: (borderWidth: CGFloat, lineWidth: CGFloat) = (borderWidth: 1.0, lineWidth: 1.2)
-        static let logoImageName = "WorkAcademyLogo"
+        static let logoImageName = "MainLogo"
     }
 }
