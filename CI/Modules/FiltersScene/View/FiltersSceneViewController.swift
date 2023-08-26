@@ -82,7 +82,7 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
             
             UIView.animate(withDuration: Constants.titleAD / 2, delay: 0, options: [.allowUserInteraction], animations: extractSelf { sSelf in
                 sSelf.sceneTitle.alpha = Constants.alpha.min
-            }, completion: extractSelf { sSelf, _ in
+            }, completion: extractSelf { sSelf, finished in
                 sSelf.sceneTitle.text = data
                 UIView.animate(withDuration: Constants.titleAD, delay: 0, options: [.allowUserInteraction], animations: sSelf.extractSelf { sSelf in
                     sSelf.sceneTitle.alpha = Constants.alpha.max
