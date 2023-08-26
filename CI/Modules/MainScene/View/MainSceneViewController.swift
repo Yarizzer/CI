@@ -109,7 +109,7 @@ extension MainSceneViewController {
         static let alpha: (min: CGFloat, max: CGFloat) = (min: 0.0, max: 1.0)
         //Animation duration
         static let initialAD: Double = 0.5
-    static let tableViewAD: Double = 1.0
+    static let tableViewAD: Double = 1
         //Constraints
         static let topConstraintExtraValue: CGFloat = 30.0
 	}
