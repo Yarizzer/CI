@@ -93,7 +93,7 @@ extension FiltersSceneViewController: FiltersSceneViewControllerType {
             
             UIView.animate(withDuration: Constants.imageUpdateAD / 2, delay: 0, options: [.allowUserInteraction], animations: extractSelf { sSelf in
                 sSelf.imageView.alpha = Constants.alpha.min
-            }, completion: extractSelf { sSelf, _ in
+            }, completion: extractSelf { sSelf, finished in
                 sSelf.imageView.image = image
                 UIView.animate(withDuration: Constants.imageUpdateAD, delay: 0, options: [.allowUserInteraction], animations: sSelf.extractSelf { sSelf in
                     sSelf.imageView.alpha = Constants.alpha.max
