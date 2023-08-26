@@ -110,7 +110,7 @@ extension FiltersSceneViewController {
         //Animation duration
         static let initialAD: Double = 0.5
         static let popUpMenuAD: Double = 0.5
-        static let titleAD: Double = 0.3
+        static let titleAD: Double = 0.2
         static let imageUpdateAD: Double = 1.0
         //Constraints
         static let topConstraintExtraValue: CGFloat = 30.0
