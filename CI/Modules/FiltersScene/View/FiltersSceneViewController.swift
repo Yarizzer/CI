@@ -114,7 +114,7 @@ extension FiltersSceneViewController {
     static let imageUpdateAD: Double = 1.0
     //Constraints
     static let topConstraintExtraValue: CGFloat = 30.0
-    static let popUpTopConstraintDefaultValue: CGFloat = -30.0
+    static let popUpTopConstraintDefaultValue: CGFloat = -40.0
     static let popUpTopConstraintExtendedValue: CGFloat = -AppCore.shared.uiLayer.device.screenSize.height / 2
   }
 }
