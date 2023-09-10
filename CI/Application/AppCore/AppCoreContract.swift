@@ -5,16 +5,16 @@
 //  Created by Yaroslav Abaturov on 26.07.2023.
 //
 
-protocol AppCoreSessionType {
+protocol AppCoreSessionType: AnyObject {
     func prepareSession(completion: @escaping (Bool) -> ())
     func openSession()
     func closeSession()
 }
 
-protocol AppCoreUILayerType {
+protocol AppCoreUILayerType: AnyObject {
     var uiLayer: AppUILayerType { get }
 }
 
-protocol AppCoreCIProcessorLayerType {
+protocol AppCoreCIProcessorLayerType: AnyObject {
     var ciProcessorLayer: AppCIProcessorLayerType { get }
 }
