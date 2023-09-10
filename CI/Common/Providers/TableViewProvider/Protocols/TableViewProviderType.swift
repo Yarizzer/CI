@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol TableViewProviderType {
+protocol TableViewProviderType: AnyObject {
     var onConfigureCell: ((IndexPath) -> UITableViewCell)? { get set }
     var onSelectCell: ((IndexPath) -> ())? { get set }
     func registerCells(_ cells: [UITableViewCell.Type])
