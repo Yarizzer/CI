@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol AppCIProcessorLayerType {
+protocol AppCIProcessorLayerType: AnyObject {
     //Publishers
     var output: Publisher <Data?> { get }
     //Prop's
