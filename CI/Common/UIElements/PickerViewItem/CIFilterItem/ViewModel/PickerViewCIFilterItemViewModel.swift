@@ -5,7 +5,7 @@
 //  Created by Yaroslav Abaturov on 26.07.2023.
 //
 
-protocol PickerViewCIFilterItemViewModelType {
+protocol PickerViewCIFilterItemViewModelType: AnyObject {
     var title: String { get }
     var type: ProcessorFilterItemType { get }
 }
