@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AppUILayerStyleWorkerType {
+protocol AppUILayerStyleWorkerType: AnyObject {
     //Colors
     var colorClear: UIColor { get }
     var colorWhite: UIColor { get }
