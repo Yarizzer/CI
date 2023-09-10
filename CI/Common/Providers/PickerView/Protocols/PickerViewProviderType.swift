@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PickerViewProviderType {
+protocol PickerViewProviderType: AnyObject {
     var onConfigureView: ((Int, Int) -> UIView)? { get set }
     var didSelectRow: ((Int) -> ())? { get set }
     func reloadData()
