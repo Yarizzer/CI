@@ -14,6 +14,7 @@ class MainSceneViewModel {
     init() {
         var data = [MainSceneCellViewModelType]()
         data.append(MainSceneFiltersCellViewModel())
+        data.append(MainSceneTestCellViewModel())
         
         self.cellItemsData = data
     }
