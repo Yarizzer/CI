@@ -73,6 +73,8 @@ extension MainSceneViewController: MainSceneViewControllerType {
           tableViewCell.setup(with: cellModel)
           
           return tableViewCell
+        case .testScene:
+            
         }
       }
       

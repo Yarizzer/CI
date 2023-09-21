@@ -7,4 +7,5 @@
 
 enum MainSceneCellType {
     case filters
+    case testScene
 }
