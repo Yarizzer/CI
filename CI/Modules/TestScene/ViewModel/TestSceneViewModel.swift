@@ -6,8 +6,20 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol TestSceneViewModelType: AnyObject { }
+protocol TestSceneViewModelType: AnyObject { 
+    //MARK: - Prop's
+    var initialSceneTitle: String { get }
+}
 
 final class TestSceneViewModel { }
 
-extension TestSceneViewModel: TestSceneViewModelType { }
+extension TestSceneViewModel: TestSceneViewModelType { 
+    //MARK: - Prop's
+    var initialSceneTitle: String { Constants.initialTitleValue }
+}
+
+extension TestSceneViewModel {
+    private struct Constants {
+        static let initialTitleValue = "Test scene"
+    }
+}

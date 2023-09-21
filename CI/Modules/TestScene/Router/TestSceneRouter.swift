@@ -11,6 +11,7 @@ import UIKit
 protocol TestSceneRoutable: AnyObject {
 	static func assembly() -> UIViewController
 	func routeTo(scene type: TestSceneRoutableContractData.TestSceneRoutableSceneType)
+    func dismiss()
 }
 
 final class TestSceneRouter {
@@ -52,4 +53,8 @@ extension TestSceneRouter: TestSceneRoutable {
 //		vc.transitioningDelegate = view
 		self.view?.present(vc, animated: true)
 	}
+    
+    func dismiss() {
+        view?.dismiss(animated: true, completion: nil)
+    }
 }
