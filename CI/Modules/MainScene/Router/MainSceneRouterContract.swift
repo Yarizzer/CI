@@ -9,5 +9,6 @@
 struct MainSceneRoutableContractData {
 	enum MainSceneRoutableSceneType {
 		case filtersScene
+        case testScene
 	}
 }

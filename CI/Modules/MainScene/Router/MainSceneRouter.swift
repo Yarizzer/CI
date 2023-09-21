@@ -16,7 +16,8 @@ protocol MainSceneRoutable {
 class MainSceneRouter {
 	private func prepareDestinationScene(with type: MainSceneRoutableContractData.MainSceneRoutableSceneType) -> UIViewController {
 		switch type {
-        case .filtersScene: return FiltersSceneRouter.assembly()
+        case .filtersScene:     return FiltersSceneRouter.assembly()
+        case .testScene:        return TestSceneRouter.assembly()
 		}
 	}
 	

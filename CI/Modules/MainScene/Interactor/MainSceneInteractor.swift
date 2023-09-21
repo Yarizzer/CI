@@ -26,6 +26,7 @@ extension MainSceneInteractor: MainSceneInteractable {
         case .itemSelected(let index):
             switch service.getItem(with: index).type {
             case .filters: router.routeTo(scene: .filtersScene)
+            case .testScene: router.routeTo(scene: .testScene)
             }
 		}
 	}

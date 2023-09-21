@@ -59,7 +59,8 @@ extension MainSceneViewController: MainSceneViewControllerType {
             guard let presenterModel = model as? TableViewProviderViewModel else { return }
             
             provider = TableViewProvider(for: self.tableView, with: presenterModel)
-            provider?.registerCells([MainSceneFiltersCell.self])
+            provider?.registerCells([MainSceneFiltersCell.self,
+                                     MainSceneTestCell.self])
             
             provider?.onConfigureCell = { [weak self] indexPath in
                 guard let provider = self?.provider else { return UITableViewCell() }
