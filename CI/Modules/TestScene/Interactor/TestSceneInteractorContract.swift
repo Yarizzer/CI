@@ -13,6 +13,7 @@ protocol TestSceneInteractable: AnyObject {
 struct TestSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
+        case viewIsReady
         case routeBack
 	}
 }

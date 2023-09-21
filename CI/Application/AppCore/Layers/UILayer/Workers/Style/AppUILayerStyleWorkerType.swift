@@ -20,6 +20,7 @@ protocol AppUILayerStyleWorkerType: AnyObject {
     var colorOrange: UIColor { get }
 
     //Fonts
+    var hugeFont: UIFont { get }
     var labelTitleFontExtraLarge: UIFont { get }
     var labelTitleFontLarge: UIFont { get }
     var labelTitleFontMedium: UIFont { get }

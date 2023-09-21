@@ -22,6 +22,7 @@ extension TestScenePresenter: TestScenePresentable {
 		
 		switch responseType {
 		case .initialSetup: viewController?.update(viewModelDataType: .initialSetup(with: model))
+        case .viewIsReady: viewController?.update(viewModelDataType: .updateTestView(with: model))
 		case .drainView: viewController = nil
 		}
 	}

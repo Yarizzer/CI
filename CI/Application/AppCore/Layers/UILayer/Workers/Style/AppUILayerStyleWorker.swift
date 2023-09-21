@@ -48,6 +48,7 @@ extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
     var colorGreen: UIColor { StyleColors.green.color }
     var colorOrange: UIColor { StyleColors.orange.color }
     //Fonts
+    var hugeFont: UIFont { Constants.hugeFont }
     var labelTitleFontExtraLarge: UIFont {  Constants.extraLargeFont }
     var labelTitleFontLarge: UIFont { Constants.largeFont }
     var labelTitleFontMedium: UIFont {  Constants.mediumFont }
@@ -61,6 +62,7 @@ extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
 
 extension AppUILayerStyleWorker {
     private struct Constants {
+        static let hugeFont: UIFont = UIFont(name: "GillSans-UltraBold", size: 30) ?? UIFont.systemFont(ofSize: 60)
         static let extraLargeFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 30) ?? UIFont.systemFont(ofSize: 30)
         static let largeFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 20) ?? UIFont.systemFont(ofSize: 20)
         static let mediumFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 15) ?? UIFont.systemFont(ofSize: 15)

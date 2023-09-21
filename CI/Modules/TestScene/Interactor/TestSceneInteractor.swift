@@ -22,6 +22,7 @@ extension TestSceneInteractor: TestSceneInteractable {
 	func makeRequest(requestType: TestSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
+        case .viewIsReady: presenter.response(responseType: .viewIsReady)
         case .routeBack: router.dismiss()
 		}
 	}

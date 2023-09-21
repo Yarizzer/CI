@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="backButton" destination="ijy-6G-dKo" id="BQa-0z-Km2"/>
                 <outlet property="sceneTitle" destination="bxU-2E-fKU" id="nMq-zo-FdW"/>
+                <outlet property="testView" destination="bbx-fg-8L1" id="kF6-s0-QeR"/>
                 <outlet property="topPaddingConstraint" destination="VHM-NN-eqW" id="hLK-9f-u2o"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
             </connections>
@@ -55,12 +56,22 @@
                                 <constraint firstAttribute="bottom" secondItem="ijy-6G-dKo" secondAttribute="bottom" constant="5" id="vb0-qy-N9e"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-fg-8L1" customClass="TestSceneTestView" customModule="CI" customModuleProvider="target">
+                            <rect key="frame" x="40" y="164" width="240" height="240"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bbx-fg-8L1" secondAttribute="height" multiplier="1:1" id="5cF-Ii-HA9"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="bbx-fg-8L1" firstAttribute="centerY" secondItem="zRH-4Z-6La" secondAttribute="centerY" id="HNJ-ck-xXf"/>
                         <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="VHM-NN-eqW"/>
+                        <constraint firstItem="bbx-fg-8L1" firstAttribute="centerX" secondItem="zRH-4Z-6La" secondAttribute="centerX" id="h6a-P2-CJM"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="jAA-Jb-VfW"/>
+                        <constraint firstItem="bbx-fg-8L1" firstAttribute="width" secondItem="zRH-4Z-6La" secondAttribute="width" multiplier="3:4" id="tRg-uM-4lL"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>

@@ -13,6 +13,7 @@ protocol TestScenePresentable: AnyObject {
 struct TestScenePresenterResponse {
 	enum TestSceneResponseType {
 		case initialSetup
+        case viewIsReady
 		case drainView
 	}
 }

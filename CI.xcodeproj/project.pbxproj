@@ -14,6 +14,8 @@
 		71340F832ABC84B6007568BA /* MainSceneTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71340F812ABC84B6007568BA /* MainSceneTestCell.swift */; };
 		71340F842ABC84B6007568BA /* MainSceneTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71340F822ABC84B6007568BA /* MainSceneTestCell.xib */; };
 		71340F862ABC855A007568BA /* MainSceneTestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71340F852ABC855A007568BA /* MainSceneTestCellViewModel.swift */; };
+		71340F8B2ABC8F35007568BA /* TestSceneTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71340F8A2ABC8F35007568BA /* TestSceneTestView.swift */; };
+		71340F8D2ABC8F47007568BA /* TestSceneTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71340F8C2ABC8F47007568BA /* TestSceneTestViewModel.swift */; };
 		7168F0F52A71899600BB3AA0 /* FiltersScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */; };
 		7168F0F62A71899600BB3AA0 /* FiltersSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */; };
 		7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */; };
@@ -111,6 +113,8 @@
 		71340F812ABC84B6007568BA /* MainSceneTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneTestCell.swift; sourceTree = "<group>"; };
 		71340F822ABC84B6007568BA /* MainSceneTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSceneTestCell.xib; sourceTree = "<group>"; };
 		71340F852ABC855A007568BA /* MainSceneTestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneTestCellViewModel.swift; sourceTree = "<group>"; };
+		71340F8A2ABC8F35007568BA /* TestSceneTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneTestView.swift; sourceTree = "<group>"; };
+		71340F8C2ABC8F47007568BA /* TestSceneTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneTestViewModel.swift; sourceTree = "<group>"; };
 		7168F0E92A71899600BB3AA0 /* FiltersScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScenePresenter.swift; sourceTree = "<group>"; };
 		7168F0EA2A71899600BB3AA0 /* FiltersSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouterContract.swift; sourceTree = "<group>"; };
 		7168F0EB2A71899600BB3AA0 /* FiltersSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSceneRouter.swift; sourceTree = "<group>"; };
@@ -262,6 +266,31 @@
 			isa = PBXGroup;
 			children = (
 				71340F852ABC855A007568BA /* MainSceneTestCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71340F872ABC8F0C007568BA /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				71340F892ABC8F20007568BA /* ViewModel */,
+				71340F882ABC8F18007568BA /* View */,
+			);
+			path = TestView;
+			sourceTree = "<group>";
+		};
+		71340F882ABC8F18007568BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71340F8A2ABC8F35007568BA /* TestSceneTestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71340F892ABC8F20007568BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71340F8C2ABC8F47007568BA /* TestSceneTestViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -455,6 +484,7 @@
 		7179555A2ABAC9EE00D02FFD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				71340F872ABC8F0C007568BA /* TestView */,
 				717955442ABAC8E100D02FFD /* TestSceneViewController.swift */,
 				717955492ABAC8E100D02FFD /* TestSceneViewController.xib */,
 				7179554A2ABAC8E100D02FFD /* TestSceneViewControllerContract.swift */,
@@ -1103,6 +1133,8 @@
 				718D16322A6FB65C00E59160 /* AppDelegate.swift in Sources */,
 				71D9D8E82A71486C00BC9F65 /* MainSceneViewControllerContract.swift in Sources */,
 				7168F0F92A71899600BB3AA0 /* FiltersSceneInteractor.swift in Sources */,
+				71340F8B2ABC8F35007568BA /* TestSceneTestView.swift in Sources */,
+				71340F8D2ABC8F47007568BA /* TestSceneTestViewModel.swift in Sources */,
 				71D9D8F82A714BFA00BC9F65 /* PickerViewProvider.swift in Sources */,
 				7168F0FE2A71899600BB3AA0 /* FiltersSceneViewControllerContract.swift in Sources */,
 				7168F0FF2A71899600BB3AA0 /* FiltersScenePresenterContract.swift in Sources */,

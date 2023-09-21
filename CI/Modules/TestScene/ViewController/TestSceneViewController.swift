@@ -25,6 +25,8 @@ final class TestSceneViewController: BaseViewController<TestSceneInteractable> {
             sSelf.view.layoutIfNeeded()
         }, completion: extractSelf { sSelf, _ in
             sSelf.backButton.appear()
+            
+            sSelf.interactor?.makeRequest(requestType: .viewIsReady)
         })
     }
     
@@ -48,6 +50,7 @@ final class TestSceneViewController: BaseViewController<TestSceneInteractable> {
     
     @IBOutlet private weak var backButton: BackButton!
     @IBOutlet private weak var sceneTitle: UILabel!
+    @IBOutlet private weak var testView: TestSceneTestView!
 }
 
 extension TestSceneViewController: TestSceneViewControllerType {
@@ -55,6 +58,10 @@ extension TestSceneViewController: TestSceneViewControllerType {
 		switch viewModelDataType {
 		case .initialSetup(let model):
             sceneTitle.text = model.initialSceneTitle
+        case .updateTestView(let model):
+            testView.setup(with: model.getTestViewViewModel())
+            
+//            testView.setNeedsDisplay()
 		}
 	}
 }

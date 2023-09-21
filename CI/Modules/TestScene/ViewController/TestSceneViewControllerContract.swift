@@ -13,5 +13,6 @@ protocol TestSceneViewControllerType: AnyObject {
 struct TestSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: TestSceneViewModelType)
+        case updateTestView(with: TestSceneViewModelType)
 	}
 }

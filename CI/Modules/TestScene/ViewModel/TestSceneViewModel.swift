@@ -9,6 +9,7 @@
 protocol TestSceneViewModelType: AnyObject { 
     //MARK: - Prop's
     var initialSceneTitle: String { get }
+    func getTestViewViewModel() -> TestSceneTestViewModelType
 }
 
 final class TestSceneViewModel { }
@@ -16,6 +17,10 @@ final class TestSceneViewModel { }
 extension TestSceneViewModel: TestSceneViewModelType { 
     //MARK: - Prop's
     var initialSceneTitle: String { Constants.initialTitleValue }
+    
+    func getTestViewViewModel() -> TestSceneTestViewModelType {
+        TestSceneTestViewModel()
+    }
 }
 
 extension TestSceneViewModel {
