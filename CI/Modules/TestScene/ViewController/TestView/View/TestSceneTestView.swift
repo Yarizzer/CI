@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TestSceneTestView: UIView {
+final class TestSceneTestView: UIView {
     //MARK: - initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +31,7 @@ class TestSceneTestView: UIView {
         layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
     }
     
+    //MARK: - Setting up view
     private func setupView() {
         canvas = UIView()
         backgroundImage = UIImageView()
@@ -51,6 +52,7 @@ class TestSceneTestView: UIView {
         addSubview(canvas)
     }
     
+    //MARK: - Setting up constraints
     private func setupConstraints() {
         guard let canvas, let backgroundImage, let imageView, let textLabel else { return }
         
@@ -98,10 +100,9 @@ class TestSceneTestView: UIView {
         imageView.layer.mask = textLabel.layer
         imageView.layer.masksToBounds = true
         
-        #warning("remove 'magic numbers'")
-        UIView.animate(withDuration: 10, delay: 0, options: [.curveEaseOut, .allowUserInteraction]) { [weak self] in
-            backgroundImage.alpha = 0.0
-        }
+        UIView.animate(withDuration: Constants.animationDuration, delay: 0, options: [.curveEaseOut, .allowUserInteraction], animations: extractSelf { sSelf in
+            backgroundImage.alpha = Constants.alphaValues.min
+        })
     }
     
     private var model: TestSceneTestViewModelType?
@@ -114,6 +115,10 @@ class TestSceneTestView: UIView {
 
 extension TestSceneTestView {
     private struct Constants {
+        //Alpha
+        static let alphaValues: (min: CGFloat, max: CGFloat) = (min: 0.0, max: 1.0)
         static let textOffsetValue: CGFloat = 50.0
+        //Animation
+        static let animationDuration: Double = 10.0
     }
 }
