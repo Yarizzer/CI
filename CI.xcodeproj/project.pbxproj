@@ -39,6 +39,7 @@
 		7168F1232A718F8D00BB3AA0 /* MainSceneFiltersCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1222A718F8D00BB3AA0 /* MainSceneFiltersCellViewModel.swift */; };
 		7168F1252A718FCD00BB3AA0 /* MainSceneCellsViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1242A718FCD00BB3AA0 /* MainSceneCellsViewModelContract.swift */; };
 		7168F1272A7197E300BB3AA0 /* MainSceneViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7168F1262A7197E300BB3AA0 /* MainSceneViewModelContract.swift */; };
+		71729F722ABEDB7000246EDC /* BubbleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71729F712ABEDB7000246EDC /* BubbleTransitionAnimator.swift */; };
 		7179554D2ABAC8E100D02FFD /* TestScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717955412ABAC8E100D02FFD /* TestScenePresenter.swift */; };
 		7179554E2ABAC8E100D02FFD /* TestSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717955422ABAC8E100D02FFD /* TestSceneRouterContract.swift */; };
 		7179554F2ABAC8E100D02FFD /* TestSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717955432ABAC8E100D02FFD /* TestSceneRouter.swift */; };
@@ -138,6 +139,7 @@
 		7168F1222A718F8D00BB3AA0 /* MainSceneFiltersCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneFiltersCellViewModel.swift; sourceTree = "<group>"; };
 		7168F1242A718FCD00BB3AA0 /* MainSceneCellsViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneCellsViewModelContract.swift; sourceTree = "<group>"; };
 		7168F1262A7197E300BB3AA0 /* MainSceneViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModelContract.swift; sourceTree = "<group>"; };
+		71729F712ABEDB7000246EDC /* BubbleTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTransitionAnimator.swift; sourceTree = "<group>"; };
 		717955412ABAC8E100D02FFD /* TestScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScenePresenter.swift; sourceTree = "<group>"; };
 		717955422ABAC8E100D02FFD /* TestSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneRouterContract.swift; sourceTree = "<group>"; };
 		717955432ABAC8E100D02FFD /* TestSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneRouter.swift; sourceTree = "<group>"; };
@@ -894,6 +896,7 @@
 			isa = PBXGroup;
 			children = (
 				71D9D8F32A714AB800BC9F65 /* BlurTransitionAnimator.swift */,
+				71729F712ABEDB7000246EDC /* BubbleTransitionAnimator.swift */,
 			);
 			path = SceneTransitions;
 			sourceTree = "<group>";
@@ -1150,6 +1153,7 @@
 				7168F0FB2A71899600BB3AA0 /* FiltersSceneInteractorContract.swift in Sources */,
 				717955562ABAC8E100D02FFD /* TestSceneViewControllerContract.swift in Sources */,
 				71D9D8E92A71486C00BC9F65 /* MainScenePresenterContract.swift in Sources */,
+				71729F722ABEDB7000246EDC /* BubbleTransitionAnimator.swift in Sources */,
 				7168F0FA2A71899600BB3AA0 /* FiltersSceneInteractorService.swift in Sources */,
 				71D9D9162A71543700BC9F65 /* PickerViewCIFilterItemViewModel.swift in Sources */,
 				7168F0F72A71899600BB3AA0 /* FiltersSceneRouter.swift in Sources */,
