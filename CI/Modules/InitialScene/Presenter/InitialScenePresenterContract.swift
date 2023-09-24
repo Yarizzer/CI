@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialScenePresentable {
+protocol InitialScenePresentable: AnyObject {
     func response(responseType: InitialScenePresenterResponse.InitialSceneResponseType)
 }
 
