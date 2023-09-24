@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol InitialSceneRoutable {
+protocol InitialSceneRoutable: AnyObject {
 	static func assembly() -> UIViewController
 	func routeTo(scene type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType)
 }
