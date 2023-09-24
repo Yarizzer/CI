@@ -6,12 +6,12 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialScenePresenterServiceType{
+protocol InitialScenePresenterServiceType: AnyObject {
 	var model: InitialSceneViewModelType { get }
 }
 
 class InitialScenePresenterService {
-    #warning("Fill the service, elsewise it's useless")
+    #warning("Fill the service, else-wise it's useless")
 	init(withModel model: InitialSceneViewModelType) {
 		self.viewModel = model
 	}
