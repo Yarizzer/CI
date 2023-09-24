@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneViewModelType {
+protocol InitialSceneViewModelType: AnyObject {
     var imageName: String { get }
 }
 
