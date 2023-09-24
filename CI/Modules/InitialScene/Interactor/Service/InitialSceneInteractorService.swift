@@ -6,10 +6,10 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneInteractorServiceType{ }
+protocol InitialSceneInteractorServiceType: AnyObject { }
 
 class InitialSceneInteractorService {
-    #warning("Fill the service, elsewise it's useless")
+    #warning("Fill the service, else-wise it's useless")
 	init(withModel model: InitialSceneViewModelType) {
 		self.viewModel = model
 	}
