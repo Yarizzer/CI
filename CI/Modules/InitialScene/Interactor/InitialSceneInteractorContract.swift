@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneInteractable {
+protocol InitialSceneInteractable: AnyObject {
 	func makeRequest(requestType: InitialSceneInteractorRequest.RequestType)
 }
 
