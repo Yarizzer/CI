@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneViewControllerType {
+protocol InitialSceneViewControllerType: AnyObject {
 	func update(viewModelDataType: InitialSceneViewControllerViewModel.ViewModelDataType)
 }
 
