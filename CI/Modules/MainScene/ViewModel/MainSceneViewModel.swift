@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainSceneViewModelType {
+protocol MainSceneViewModelType: AnyObject {
     func getCellViewModel(with index: Int) -> MainSceneCellViewModelType
 }
 
